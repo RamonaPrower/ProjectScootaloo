@@ -43,8 +43,8 @@ function getMouseXY(e)
 	  else 
 	  {
 		// grab the x-y pos.s if browser is NS
-		tempX = e.pageX
-		tempY = e.pageY
+		tempX = e.clientX
+		tempY = e.clientY
 	  }  
 	  // catch possible negative values in NS4
 	  if (tempX < 0){tempX = 0}
@@ -58,9 +58,9 @@ function moveDiv(tempX)
 {	
 	for (var i=0;i<objectArray.length;i++)
 	{
-		var yourDivPositionX = objectArray[i][3] * (0.5 * window.innerWidth - tempX) + objectArray[i][1];
+		var yourDivPositionX = objectArray[i][3] * (0.5 * window.outerWidth - tempX) + objectArray[i][1];
 		objectArray[i][0].style.left = yourDivPositionX + 'px';
-        var yourDivPositionY = objectArray[i][3] * (0.5 * window.innerHeight - tempY) + objectArray[i][2];
+        var yourDivPositionY = objectArray[i][3] * (0.5 * window.outerHeight - tempY) + objectArray[i][2];
         objectArray[i][0].style.top = yourDivPositionY + 'px';
 	}
 }

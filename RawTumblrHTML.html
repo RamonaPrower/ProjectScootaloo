@@ -273,7 +273,7 @@ opacity:1 ; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in
 
 .vidya{
 opacity:1; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; border-radius: 10px 10px 10px 10px;
-     max-width: 100%;
+     max-width: 100%; display: flex;
 }
 
 .posts:hover .vidya{
@@ -379,7 +379,7 @@ Theme by <a href="http://the-sleepiest-cloud.tumblr.com">Ramona Prower</a> and  
                 {block:Photo}
                 <div class="posts">
                     
-                        <center>{LinkOpenTag}<img src="{PhotoURL-1280}" width="400px" alt="{PhotoAlt}" class="gey">{LinkCloseTag}</center>
+                        <center>{LinkOpenTag}<img src="{PhotoURL-1280}" width="395px" alt="{PhotoAlt}" class="gey">{LinkCloseTag}</center>
                         {block:Caption}
                             <div class="caption" width=59% >{Caption}</div>
                         {/block:Caption}
@@ -505,7 +505,7 @@ Theme by <a href="http://the-sleepiest-cloud.tumblr.com">Ramona Prower</a> and  
                 {block:Video}
                 <div class="posts">
                     <p class="post video">
-                        <center><div class="vidya">{Video-400}</div></center>
+                        <center><div class="vidya" >{VideoEmbed-700}</div></center>
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}

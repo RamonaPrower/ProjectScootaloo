@@ -28,3 +28,68 @@ cursor: url(http://static.tumblr.com/1yhsgvx/DArnchxvt/spe302.png) auto;
 .avvy:hover {
 width:235px;
 }
+
+.header {
+position:fixed; z-index:1; left:58%; top:1%; width:30%;
+margin-top:2px; margin-bottom:5px; text-align:left; padding-right: 12px;
+color: #a6ccea;
+background-color: #125e98;
+border-radius: 8px;
+border-style:double;
+border-width:4px;
+border-color: #A6CCEA;
+box-shadow: inset 1px -1px 4px 2px #73AAD5;
+font-family: "enigmaticregular"  sans-serif;
+-webkit-transition: -webkit-transform 300ms ease-in-out;
+-moz-transition: -moz-transform 300ms ease-in-out;
+-o-transition: -o-transform 300ms ease-in-out;
+transition: transform 300ms ease-in-out;
+}
+.header h2{
+    text-align:center;
+}
+.header h3{
+    text-align:center;
+}
+.header h2 p{
+    text-align:center;
+}
+.header a:visited {
+        color: {color:text}; text-decoration: none;
+        }
+.header a:hover {
+-webkit-transition: color 400ms ease-in-out;
+-moz-transition: color 400ms ease-in-out;
+-o-transition: color 400ms ease-in-out;
+transition: color 400ms ease-in-out;
+        color: {color:Link hover}; text-decoration: none;
+        }
+.postbackground {
+width:43%; overflow:hidden;
+position:absolute; height:85%; z-index:3; left:8%; top:0%;
+float:left;
+}
+.posts {
+position:relative;z-index:3; left:8%; width:97%; margin:5px; 
+padding:6px;
+background-color: #4D8DBE;
+border-radius: 8px;
+border-style:double;
+border-width:4px;
+border-color: #125E98;
+box-shadow: inset 1px -1px 10px 4px #125E98;
+float:left;
+transform-origin:center;
+}
+.posts .images {
+
+    min-width: 100%;
+}
+H1 { color: {color:text}; font-size: 3em; text-align:center; text-shadow: 2px 3px 5px #3073A7; margin:0;
+}
+
+H2 {margin-left: 10pt; text-shadow: 2px 3px 5px #3073A7; line-height: 1em;}
+p {margin-left: 10pt;  text-shadow: 2px 3px 5px #3073A7; width:97%}
+p.permalink {text-align:right; text-shadow: 2px 3px 5px #3073A7; margin:0pt 5pt 0pt 0pt;}
+p.description2 {margin-right: 80%; text-shadow: 2px 3px 5px #3073A7; margin-top:-10px; text-align:center;}
+li {margin-left: 10pt; text-shadow: 2px 3px 5px #3073A74; text-decoration: underline;}

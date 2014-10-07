@@ -1,0 +1,585 @@
+<html>
+<head>
+<!--SCOOTALOO 0.85 (Sweetie Branch) 
+Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
+<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
+        <meta name="color:First" content="#ffb8f1"/>
+        <meta name="color:Second" content="#FCED77/">
+        <meta name="color:text" content="#FCED77/">
+        <meta name="color:Link hover" content="#5ed8f3"/>
+        <meta name="color:Header Colour" content"#FCED77"/>
+        <meta name="if:Use Image URL instead" content="0"/>
+        <meta name="text:Custom Image URL" content=""/>
+        <meta name="image:Side Image" content="{SideImage}"/>
+        <meta name="text:Ask Text" content="Ask"/>
+        <meta name="text:Submit Text" content="Submit"/>
+        <title>{Title}</title>
+        <link rel="shortcut icon" href="http://th04.deviantart.net/fs71/PRE/f/2012/247/5/0/colgate_cutie_mark_by_datnaro-d5dimgc.png">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+  <div class="desc">  {block:Description}
+<meta name="description" content="{MetaDescription}" />
+        {/block:Description} </div>
+<link href='http://rainbowdashalwaysdressesinstyle.com/Tumblr/stylesheet.css' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/RandomImage.js"></script>
+
+<style>
+.desc p{
+    text-align:center;
+}
+#musicplayer {text-align: center;font-size: 11px;position:fixed;left:15px;top:-43px;-webkit-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;z-index:999;}   #musicplayer:hover {top:-10px;}  
+
+ #music {padding: 15px 0 5px 0;background: #e5ffe5;width:700px;border-bottom-right-radius: 5px;-moz-border-radius-bottomright: 5px;-webkit-border-bottom-right-radius: 5px;z-index: 9999;} 
+
+#musictab {font-family:enigmaticregular;text-shadow: 0 1px 0 #FFFFFF;height:30px;padding: 0 0 8px 0;background:#e5ffe5;border-bottom-left-radius: 5px;-moz-border-radius-bottomleft: 5px;-webkit-border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;-moz-border-radius-bottomright: 5px;-webkit-border-bottom-right-radius: 5px;width: 50px;}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffba5e;
+  border: 1px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffddaf;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ed8d0d;
+}
+::-webkit-scrollbar-track {
+  background: #3073a7;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #4d8dbe;
+}
+::-webkit-scrollbar-track:active {
+  background: #a6ccea;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+a:link {
+    color: {color:First}; text-decoration: underline;
+-webkit-transition: color 200ms ease-in-out;
+-moz-transition: color 200ms ease-in-out;
+-o-transition: color 200ms ease-in-out;
+transition: color 200ms ease-in-out;
+    }
+a:visited {
+    color: {color:First}; text-decoration: none;
+        }
+a:hover {
+-webkit-transition: color 200ms ease-in-out;
+-moz-transition: color 200ms ease-in-out;
+-o-transition: color 200ms ease-in-out;
+transition: color 200ms ease-in-out;
+        color: {color:link hover}; text-decoration: none;
+}
+
+.header h2{
+    text-align:center;
+}
+.header h3{
+    text-align:center;
+}
+.header h2 p{
+    text-align:center;
+}
+.header a:visited {
+        color: {color:text}; text-decoration: none;
+        }
+.header a:hover {
+-webkit-transition: color 400ms ease-in-out;
+-moz-transition: color 400ms ease-in-out;
+-o-transition: color 400ms ease-in-out;
+transition: color 400ms ease-in-out;
+        color: {color:Link hover}; text-decoration: none;
+        }
+.header a:active {
+-webkit-transition: color 400ms ease-in-out;
+-moz-transition: color 400ms ease-in-out;
+-o-transition: color 400ms ease-in-out;
+transition: color 400ms ease-in-out;
+        color: {color:second}; text-decoration: none;
+        }
+body {
+margin: 0;
+padding: 0px;
+background: {color:Background} url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/Background.png) fixed;
+background-size:cover;
+font-family: "enigmaticregular" sans-serif;
+font-size: 12px;
+letter-spacing:.5px;
+color: {color:text};
+cursor: url(http://static.tumblr.com/1yhsgvx/DArnchxvt/spe302.png) auto;
+}
+
+.header {
+position:fixed; z-index:1; left:58%; top:1%; width:30%;
+margin-top:2px; margin-bottom:5px; text-align:left; padding-right: 12px;
+color: {color:text};
+background-color: {color:Second};
+border-radius: 8px;
+border-style:double;
+border-width:4px;
+border-color: #A6CCEA;
+box-shadow: inset 1px -1px 4px 2px #73AAD5;
+font-family: "enigmaticregular"  sans-serif;
+-webkit-transition: -webkit-transform 300ms ease-in-out;
+-moz-transition: -moz-transform 300ms ease-in-out;
+-o-transition: -o-transform 300ms ease-in-out;
+transition: transform 300ms ease-in-out;
+}
+
+.avvy img{
+     position:fixed; z-index:7; left:81%; top:9%; width:192px; 
+     transition: width 0.4s;
+  -moz-transition: width 0.4s; /* Firefox 4 */
+  -webkit-transition: width 0.4s; /* Safari and Chrome */
+  -o-transition: width 0.4s; /* Opera */
+  -ms-transition: width 0.4s; /* IE9 (maybe) */
+ }
+ 
+.avvy:hover {
+width:235px;
+}
+.headerBG {height:180px; position:fixed; z-index:5; left:9%; top:-18px; right:30%;margin-bottom:5px; text-align:left;
+background-color: {color:Header Colour};
+border-radius: 8px;
+border-style:double;
+border-width:4px;
+border-color: #125E98;
+box-shadow: inset 1px -1px 10px 4px #125E98;
+}
+ 
+.posts {
+position:static;  z-index:3; left:8%; width:97%; margin:5px; margin-left:0px;
+padding:6px;
+background-color: #4D8DBE;
+border-radius: 8px;
+border-style:double;
+border-width:4px;
+border-color: #125E98;
+box-shadow: inset 1px -1px 10px 4px #125E98;
+float:left;
+transform-origin:center;
+}
+ 
+.posts.off-screen-top{
+ transform:translateY(-150px);
+ }
+.posts.off-screen-bottom{
+ transform:translateY(150px);
+ }
+
+.posts .gey{opacity:1; -webkit-transition:0.4s ease-in-out;>-moz-transition:0.4s ease-in-out;transition:0.4s ease-in-out; border-radius: 10px 10px 10px 10px;}
+
+.posts:hover img{
+opacity:1 ; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; 
+}
+
+.HnnghMain {
+Position:fixed; z-index:-50; 
+Right:3%; bottom:0%; background-image:url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/FlyRDFly.png); width:67%; height:75%; background-size:contain;background-repeat:no-repeat;
+}
+
+.HnnghMain img{
+    min-height:45%;
+    min-width:45%;
+}
+
+.postbackground {
+width:43%; overflow:hidden;
+position:relative; height:85%; z-index:3; left:8%; top:0%;
+//float:left;
+}
+ 
+.footerBG {
+width:43%; overflow:auto;
+position:fixed; z-index:6; left:58%; bottom:-2%;
+text-align:center;
+}
+
+#tags{color:{color:First};}
+
+.footer {
+width:30%; overflow:auto; padding-bottom: 12px; padding-top: 12px;
+position:fixed; z-index:6; left:58%; bottom:0px;
+text-align:center;
+background-color: {color:Second};
+border-radius: 8px;
+border-style:double;
+border-width:4px;
+border-color: #A6CCEA;
+box-shadow: inset 1px -1px 4px 2px #73AAD5;
+}
+.postnote {
+    float:left;
+}
+.like_and_reblog_buttons {
+                display:block;
+                list-style:none;
+            }
+.like_and_reblog_buttons li {
+                display:block;
+                float:right;
+                left:8%;
+                margin:0px;
+                margin-top: -10px;
+                padding: 2px 5px;
+                height: 20px;
+               // background-color: {color:Second};
+                border-radius: 6px;
+              //  box-shadow: 2px 5px 12px #555;
+                vertical-align: middle;
+}
+.like_and_reblog_buttons li:first-child{
+    margin-right:0px;
+}
+
+blargh .fadein{
+    float:right;
+    opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+   
+}
+
+blargh .posts:hover .fadein{
+        opacity:1; 
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+}
+
+.photoset{
+opacity:1; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out;  border-radius: 10px 10px 10px 10px;
+    max-width: 100%; 
+    padding-left:6px;
+}
+.posts:hover .photoset{
+opacity:1 ; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; 
+}
+
+.vidya{
+opacity:1; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; border-radius: 10px 10px 10px 10px;
+     max-width: 100%;
+}
+
+.posts:hover .vidya{
+opacity:1; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; 
+}
+
+.notes{
+    float:left;
+    left:0px;
+    top:10px;
+    padding:5px 15px 5px 15px;
+    font-family: "enigmaticregular", sans-serif;
+    font-size:1.1em;
+}
+
+.posts .gey{
+    
+    min-width:100%;
+   
+}
+
+.posts blockquote {
+      border-left: solid 2px;
+      color: {color:text};
+      margin-left:30px;
+      padding:0px 5px;
+}
+
+H1 { color: {color:text}; font-size: 3em; text-align:center; text-shadow: 2px 3px 5px #3073A7; margin:0;
+}
+
+H2 {margin-left: 10pt; text-shadow: 2px 3px 5px #3073A7; line-height: 1em;}
+p {margin-left: 10pt;  text-shadow: 2px 3px 5px #3073A7; width:97%}
+p.permalink {text-align:right; text-shadow: 2px 3px 5px #3073A7; margin:0pt 5pt 0pt 0pt;}
+p.description2 {margin-right: 80%; text-shadow: 2px 3px 5px #3073A7; margin-top:-10px; text-align:center;}
+li {margin-left: 10pt; text-shadow: 2px 3px 5px #3073A74; text-decoration: underline;}
+.linkty{
+    color:{color:first};
+}
+{CustomCSS}
+</style>
+</head> 
+<body>
+<div class=header>
+<h1><a href="http://the-sleepiest-cloud.tumblr.com/page/1">Ramona's Blerg</a></h1><br>
+<p class="description2">
+        {block:Description}
+            {Description}
+        {/block:Description}</p>
+<h2>
+<span class=linkty>| <a href="http://the-sleepiest-cloud.tumblr.com/ask" align="center">Ask</a> | <a href="http://the-sleepiest-cloud.tumblr.com/submit">Submit</a> |</span>
+
+</h2> 
+</div>
+<div class=avvy>
+<script language="JavaScript">
+<!--
+// ==============================================
+// Copyright 2003 by jsCode.com
+// Source: jsCode.com
+// Author: etLux
+// Free for all; but please leave in the header.
+// ==============================================
+showImage();
+//-->
+</script>
+</div>
+<div class=footer>
+{block:Pagination}
+{block:PreviousPage}<a href={PreviousPage}>Previous</a>{/block:PreviousPage}
+ <span class="currentpage" style="color:{color:text}">Page {CurrentPage} of {totalpages}</span>{block:NextPage}
+                <a  href="{NextPage}">Next</a>
+            {/block:NextPage}{/block:Pagination}<br>
+Theme by <a href="http://the-sleepiest-cloud.tumblr.com">Ramona Prower</a> and  <a href="http://braixy.tumblr.com">Braixy</a>, Powered by Tumblr.
+</div>
+
+<div class="postbackground">
+<div class = "autopagerize_page_element" >
+            {block:Posts}
+                {block:Text}
+                <div class="posts">
+                    <p class="post text">
+                        {block:Title}
+                            <h2><a href="{Permalink}" >{Title}</a></h2>
+                        {/block:Title}
+                        {Body}
+                    </p>
+{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+<a href="{TagURL}">{Tag}</a><span class="comma">, </span>
+{/block:Tags}{/block:HasTags}<br><br>
+{block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
+                        </p>
+<div class="fadein">
+<ul class="like_and_reblog_buttons">
+              <li>{ReblogButton color="white"}</li>
+              <li>{LikeButton color="white"}</li>
+</ul>  
+</div>
+<br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
+</div>
+                {/block:Text}
+                
+                {block:Photo}
+                <div class="posts">
+                    
+                        <center>{LinkOpenTag}<img src="{PhotoURL-1280}" width="400px" alt="{PhotoAlt}" class="gey">{LinkCloseTag}</center>
+                        {block:Caption}
+                            <div class="caption" width=59% >{Caption}</div>
+                        {/block:Caption}
+                    
+{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+<a href="{TagURL}">{Tag}</a><span class="comma">, </span>
+{/block:Tags}{/block:HasTags}<br><br>
+{block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
+                       
+<div class="fadein">
+<ul class="like_and_reblog_buttons">
+              <li>{ReblogButton color="white"}</li>
+              <li>{LikeButton color="white"}</li>
+</ul> 
+</div>
+<br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
+
+                        </div>
+                {/block:Photo}
+                {block:Photoset}
+                <div class="posts">
+                    <p class="post photoset">
+                       <center><div class="photoset"> {Photoset-400}</div></center>
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </p>
+{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+<a href="{TagURL}">{Tag}</a><span class="comma">, </span>
+{/block:Tags}{/block:HasTags}<br><br>
+{block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
+                        </p>
+<div class="fadein">
+<ul class="like_and_reblog_buttons">
+              <li>{ReblogButton color="white"}</li>
+              <li>{LikeButton color="white"}</li>
+</ul>  
+</div>
+<br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
+                        </div>
+                        
+                {/block:Photoset}
+ 
+                {block:Quote}
+                <div class="posts">
+                    <p class="post quote">
+                        "{Quote}"
+                        {block:Source}
+                            <div class="source">- {Source}</div>
+                        {/block:Source}
+                    </p>
+{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+<a href="{TagURL}">{Tag}</a><span class="comma">, </span>
+{/block:Tags}{/block:HasTags}<br><br>
+{block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
+                        </p>
+<div class="fadein">
+<ul class="like_and_reblog_buttons">
+              <li>{ReblogButton color="white"}</li>
+              <li>{LikeButton color="white"}</li>
+</ul>  
+</div>
+<br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
+                        </div>
+                {/block:Quote}
+ 
+                {block:Link}
+                <div class="posts">
+                    <p class="post link">
+                        <h2><a href="{URL}" class="link" {Target}>{Name}</a></h2>
+                        <p>{block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}</p>
+                    </p>
+{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+<a href="{TagURL}">{Tag}</a><span class="comma">, </span>
+{/block:Tags}{/block:HasTags}<br><br>
+{block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
+                        </p>
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+<div class="fadein">
+<ul class="like_and_reblog_buttons">
+              <li>{ReblogButton color="white"}</li>
+              <li>{LikeButton color="white"}</li>
+</ul>  
+</div>
+<br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
+                        </div>
+                {/block:Link}
+ 
+                {block:Chat}
+                <div class="posts">
+                    <p class="post chat">
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+                        <p class="chat">
+                            {block:Lines}
+                                <li>
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}
+                                    {Line}
+                                </li>
+                            {/block:Lines}
+                        </p>
+                    </p>
+                     {block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+<a href="{TagURL}">{Tag}</a><span class="comma">, </span>
+{/block:Tags}{/block:HasTags}<br><br>
+{block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
+                        </p>
+<div class="fadein">
+<ul class="like_and_reblog_buttons">
+              <li>{ReblogButton color="white"}</li>
+              <li>{LikeButton color="white"}</li>
+</ul>  
+</div>
+<br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
+                        </div>
+                {/block:Chat}
+ 
+                {block:Video}
+                <div class="posts">
+                    <p class="post video">
+                        <center><div class="vidya">{Video-400}</div></center>
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </p>
+                       {block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+<a href="{TagURL}">{Tag}</a><span class="comma">, </span>
+{/block:Tags}{/block:HasTags}<br><br>
+{block:Date}<a href="{Permalink}" class="notes" >{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
+                        </p>
+<div class="fadein">
+<ul class="like_and_reblog_buttons">
+              <li>{ReblogButton color="white"}</li>
+              <li>{LikeButton color="white"}</li>
+</ul>  
+</div>
+<br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
+                        </div>
+                {/block:Video}
+                
+ {block:Answer}
+<div class="posts">
+<p><img src="{AskerPortraitURL-30}"> {Asker} asked: {Question} {Answer}</p>
+{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+<a href="{TagURL}">{Tag}</a><span class="comma">, </span>
+{/block:Tags}{/block:HasTags}<br><br>
+{block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
+                        </p>
+<div class="fadein">
+<ul class="like_and_reblog_buttons">
+              <li>{ReblogButton color="white"}</li>
+              <li>{LikeButton color="white"}</li>
+</ul>  
+</div>
+<br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
+                        </div>
+{/block:Answer}
+
+                {block:Audio}
+                <div class="posts">
+                    <p class="post audio">
+                        {AudioPlayerBlack}
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </p>
+{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+<a href="{TagURL}">{Tag}</a><span class="comma">, </span>
+{/block:Tags}{/block:HasTags}<br><br>
+{block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
+                        </p>
+<div class="fadein">
+<ul class="like_and_reblog_buttons">
+              <li>{ReblogButton color="white"}</li>
+              <li>{LikeButton color="white"}</li>
+</ul>  
+</div>
+<br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
+</div>
+                {/block:Audio}
+            {/block:Posts}
+            </div>
+<br>
+<br>
+</div>
+{block:IfNotUseImageURLinstead}
+<div class=HnnghMain id=HnnghMain>
+
+</div>
+{/block:IfNotUseImageURLinstead}
+{block:IfUseImageURLInstead}
+<div class=HnnghMain id=HnnghMain>
+
+</div>
+{/block:IfUseImageURLInstead}
+<script type="text/javascript" src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/Parallax.js"></script>
+</body>
+</html>

@@ -3,13 +3,13 @@
 <!--SCOOTALOO 0.85 (Sweetie Branch) 
 Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 <script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
-        <meta name="color:First" content="#ffb8f1"/>
-        <meta name="color:Second" content="#FCED77/">
-        <meta name="color:text" content="#FCED77/">
-        <meta name="color:Link hover" content="#5ed8f3"/>
-        <meta name="color:Header Colour" content"#FCED77"/>
+        <meta name="color:First" content="#a6ccea"/>
+        <meta name="color:Second" content="#125e98"/>
+        <meta name="color:text" content="#a6ccea"/>
+        <meta name="color:Link hover" content="#40c8c8"/>
+        <meta name="color:Header Colour" content="#125e98"/>
         <meta name="if:Use Image URL instead" content="0"/>
-        <meta name="text:Custom Image URL" content=""/>
+        <meta name="text:Custom Image URL" content="http://rainbowdashalwaysdressesinstyle.com/Tumblr/FlyRDFly.png"/>
         <meta name="image:Side Image" content="{SideImage}"/>
         <meta name="text:Ask Text" content="Ask"/>
         <meta name="text:Submit Text" content="Submit"/>
@@ -27,12 +27,7 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 .desc p{
     text-align:center;
 }
-#musicplayer {text-align: center;font-size: 11px;position:fixed;left:15px;top:-43px;-webkit-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;z-index:999;}   #musicplayer:hover {top:-10px;}  
-
- #music {padding: 15px 0 5px 0;background: #e5ffe5;width:700px;border-bottom-right-radius: 5px;-moz-border-radius-bottomright: 5px;-webkit-border-bottom-right-radius: 5px;z-index: 9999;} 
-
-#musictab {font-family:enigmaticregular;text-shadow: 0 1px 0 #FFFFFF;height:30px;padding: 0 0 8px 0;background:#e5ffe5;border-bottom-left-radius: 5px;-moz-border-radius-bottomleft: 5px;-webkit-border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;-moz-border-radius-bottomright: 5px;-webkit-border-bottom-right-radius: 5px;width: 50px;}
-
+    
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -189,7 +184,14 @@ opacity:1 ; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in
 
 .HnnghMain {
 Position:fixed; z-index:-50; 
-Right:3%; bottom:0%; background-image:url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/FlyRDFly.png); width:67%; height:75%; background-size:contain;background-repeat:no-repeat;
+Right:3%; bottom:0%;
+    {block:IfNotUseImageURLinstead}
+    background-image:url({image:Side Image}); 
+    {/block:IfNotUseImageURLinstead}
+    {block:IfUseImageURLInstead}
+    background-image:url({text:Custom Image URL});
+    {/block:IfUseImageURLInstead}
+    width:67%; height:75%; background-size:contain;background-repeat:no-repeat;
 }
 
 .HnnghMain img{
@@ -330,15 +332,7 @@ li {margin-left: 10pt; text-shadow: 2px 3px 5px #3073A74; text-decoration: under
 </div>
 <div class=avvy>
 <script language="JavaScript">
-<!--
-// ==============================================
-// Copyright 2003 by jsCode.com
-// Source: jsCode.com
-// Author: etLux
-// Free for all; but please leave in the header.
-// ==============================================
 showImage();
-//-->
 </script>
 </div>
 <div class=footer>

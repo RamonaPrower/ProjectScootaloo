@@ -2,7 +2,6 @@
 <head>
 <!--SCOOTALOO 0.85 (Sweetie Branch) 
 Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
-<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
         <meta name="color:First" content="#a6ccea"/>
         <meta name="color:Second" content="#125e98"/>
         <meta name="color:text" content="#a6ccea"/>
@@ -16,22 +15,25 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
         <title>{Title}</title>
         <link rel="shortcut icon" href="http://th04.deviantart.net/fs71/PRE/f/2012/247/5/0/colgate_cutie_mark_by_datnaro-d5dimgc.png">
         <link rel="alternate" type="application/rss+xml" href="{RSS}">
-  <div class="desc">  {block:Description}
-<meta name="description" content="{MetaDescription}" />
-        {/block:Description} </div>
+<div class="desc">
+    {block:Description}
+        <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
+</div>
 <link href='http://rainbowdashalwaysdressesinstyle.com/Tumblr/stylesheet.css' rel='stylesheet' type='text/css'>
-
 <script type="text/javascript" src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/RandomImage.js"></script>
+<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
 
 <style>
-.desc p{
+.desc p
+    {
     text-align:center;
-}
-    
-::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
-}
+    }
+::-webkit-scrollbar
+    {
+    width: 7px;
+    height: 7px;
+    }
 ::-webkit-scrollbar-button {
   width: 0px;
   height: 0px;
@@ -62,119 +64,128 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
   background: transparent;
 }
 
-a:link {
+a:link
+    {
     color: {color:First}; text-decoration: underline;
--webkit-transition: color 200ms ease-in-out;
--moz-transition: color 200ms ease-in-out;
--o-transition: color 200ms ease-in-out;
-transition: color 200ms ease-in-out;
+    -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
+    -o-transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
     }
-a:visited {
+a:visited
+    {
     color: {color:First}; text-decoration: none;
-        }
-a:hover {
--webkit-transition: color 200ms ease-in-out;
--moz-transition: color 200ms ease-in-out;
--o-transition: color 200ms ease-in-out;
-transition: color 200ms ease-in-out;
-        color: {color:link hover}; text-decoration: none;
-}
+    }
+a:hover
+    {
+    -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
+    -o-transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
+    color: {color:link hover}; text-decoration: none;
+    }
 
-.header h2{
+.header h2
+    {
     text-align:center;
-}
-.header h3{
-    text-align:center;
-}
-.header h2 p{
-    text-align:center;
-}
-.header a:visited {
-        color: {color:text}; text-decoration: none;
-        }
-.header a:hover {
--webkit-transition: color 400ms ease-in-out;
--moz-transition: color 400ms ease-in-out;
--o-transition: color 400ms ease-in-out;
-transition: color 400ms ease-in-out;
-        color: {color:Link hover}; text-decoration: none;
-        }
-.header a:active {
--webkit-transition: color 400ms ease-in-out;
--moz-transition: color 400ms ease-in-out;
--o-transition: color 400ms ease-in-out;
-transition: color 400ms ease-in-out;
-        color: {color:second}; text-decoration: none;
-        }
-body {
-margin: 0;
-padding: 0px;
-background: {color:Background} url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/Background.png) fixed;
-background-size:cover;
-font-family: "enigmaticregular" sans-serif;
-font-size: 12px;
-letter-spacing:.5px;
-color: {color:text};
-cursor: url(http://static.tumblr.com/1yhsgvx/DArnchxvt/spe302.png) auto;
-}
-
-.header {
-position:fixed; z-index:1; left:58%; top:1%; width:30%;
-margin-top:2px; margin-bottom:5px; text-align:left; padding-right: 12px;
-color: {color:text};
-background-color: {color:Second};
-border-radius: 8px;
-border-style:double;
-border-width:4px;
-border-color: #A6CCEA;
-box-shadow: inset 1px -1px 4px 2px #73AAD5;
-font-family: "enigmaticregular"  sans-serif;
--webkit-transition: -webkit-transform 300ms ease-in-out;
--moz-transition: -moz-transform 300ms ease-in-out;
--o-transition: -o-transform 300ms ease-in-out;
-transition: transform 300ms ease-in-out;
-}
-
-.avvy img{
-     position:fixed; z-index:7; left:81%; top:9%; width:192px; 
-     transition: width 0.4s;
-  -moz-transition: width 0.4s; /* Firefox 4 */
-  -webkit-transition: width 0.4s; /* Safari and Chrome */
-  -o-transition: width 0.4s; /* Opera */
-  -ms-transition: width 0.4s; /* IE9 (maybe) */
- }
- 
-.avvy:hover {
-width:235px;
-}
-.headerBG {height:180px; position:fixed; z-index:5; left:9%; top:-18px; right:30%;margin-bottom:5px; text-align:left;
-background-color: {color:Header Colour};
-border-radius: 8px;
-border-style:double;
-border-width:4px;
-border-color: #125E98;
-box-shadow: inset 1px -1px 10px 4px #125E98;
-}
- 
-.posts {
-position:static;  z-index:3; left:8%; width:97%; margin:5px; margin-left:0px;
-padding:6px;
-background-color: #4D8DBE;
-border-radius: 8px;
-border-style:double;
-border-width:4px;
-border-color: #125E98;
-box-shadow: inset 1px -1px 10px 4px #125E98;
-float:left;
-transform-origin:center;
-}
- 
-.posts.off-screen-top{
- transform:translateY(-150px);
- }
-.posts.off-screen-bottom{
- transform:translateY(150px);
- }
+    }
+.header a:visited
+    {
+    color: {color:text}; text-decoration: none;
+    }
+.header a:hover
+    {
+    -webkit-transition: color 400ms ease-in-out;
+    -moz-transition: color 400ms ease-in-out;
+    -o-transition: color 400ms ease-in-out;
+    transition: color 400ms ease-in-out;
+    color: {color:Link hover}; text-decoration: none;
+    }
+.header a:active
+    {
+    -webkit-transition: color 400ms ease-in-out;
+    -moz-transition: color 400ms ease-in-out;
+    -o-transition: color 400ms ease-in-out;
+    transition: color 400ms ease-in-out;
+    color: {color:second}; text-decoration: none;
+    }
+.header
+    {
+    position:fixed; z-index:1; left:58%; top:1%; width:30%;
+    margin-top:2px; margin-bottom:5px; text-align:left; padding-right: 12px;
+    color: {color:text};
+    background-color: {color:Second};
+    border-radius: 8px;
+    border-style:double;
+    border-width:4px;
+    border-color: #A6CCEA;
+    box-shadow: inset 1px -1px 4px 2px #73AAD5;
+    font-family: "enigmaticregular"  sans-serif;
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    -moz-transition: -moz-transform 300ms ease-in-out;
+    -o-transition: -o-transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    }
+body
+    {
+    margin: 0;
+    padding: 0px;
+    background:url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/Background.png) fixed;
+    background-size:cover;
+    font-family: "enigmaticregular" sans-serif;
+    font-size: 12px;
+    letter-spacing:.5px;
+    color: {color:text};
+    cursor: url(http://static.tumblr.com/1yhsgvx/DArnchxvt/spe302.png) auto;
+    }
+.avvy img
+    {
+    position:fixed; z-index:7; left:81%; top:9%; width:192px;
+    transition: width 0.4s;
+    -moz-transition: width 0.4s; /* Firefox 4 */
+    -webkit-transition: width 0.4s; /* Safari and Chrome */
+    -o-transition: width 0.4s; /* Opera */
+    -ms-transition: width 0.4s; /* IE9 (maybe) */
+    }
+.avvy:hover
+    {
+    width:235px;
+    }
+.headerBG
+    {
+    height:180px;
+    position:fixed;
+    z-index:5;
+    left:9%;
+    top:-18px;
+    right:30%;
+    margin-bottom:5px;
+    text-align:left;
+    background-color: {color:Header Colour};
+    border-radius: 8px;
+    border-style:double;
+    border-width:4px;
+    border-color: #125E98;
+    box-shadow: inset 1px -1px 10px 4px #125E98;
+    }
+.posts
+    {
+    position:static;
+    z-index:3;
+    left:8%;
+    width:97%;
+    margin:5px;
+    margin-left:0px;
+    padding:6px;
+    background-color: #4D8DBE;
+    border-radius: 8px;
+    border-style:double;
+    border-width:4px;
+    border-color: #125E98;
+    box-shadow: inset 1px -1px 10px 4px #125E98;
+    float:left;
+    transform-origin:center;
+    }
 
 .posts .gey{opacity:1; -webkit-transition:0.4s ease-in-out;>-moz-transition:0.4s ease-in-out;transition:0.4s ease-in-out; border-radius: 10px 10px 10px 10px;}
 
@@ -194,21 +205,10 @@ Right:3%; bottom:0%;
     width:67%; height:75%; background-size:contain;background-repeat:no-repeat;
 }
 
-.HnnghMain img{
-    min-height:45%;
-    min-width:45%;
-}
-
 .postbackground {
 width:43%; overflow:hidden;
 position:relative; height:85%; z-index:3; left:8%; top:0%;
 //float:left;
-}
- 
-.footerBG {
-width:43%; overflow:auto;
-position:fixed; z-index:6; left:58%; bottom:-2%;
-text-align:center;
 }
 
 #tags{color:{color:First};}
@@ -246,22 +246,6 @@ box-shadow: inset 1px -1px 4px 2px #73AAD5;
 }
 .like_and_reblog_buttons li:first-child{
     margin-right:0px;
-}
-
-blargh .fadein{
-    float:right;
-    opacity: 0;
-        -webkit-transition: all 0.4s ease-in-out;
-        -moz-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
-   
-}
-
-blargh .posts:hover .fadein{
-        opacity:1; 
-        -webkit-transition: all 0.4s ease-in-out;
-        -moz-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
 }
 
 .photoset{

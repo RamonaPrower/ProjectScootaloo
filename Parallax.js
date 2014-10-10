@@ -17,16 +17,17 @@ var objectArray = new Array();
 fillObjectArray();
 positionDivs();
 
+
 function fillObjectArray()
 {
 	var DashDiv = document.getElementById("HnnghMain");
-	var DashX = 425; //position div from half width of the page
-	var DashY = 155;
+	var DashX = 905; //position div from half width of the page
+	var DashY = 165;
 	var DashFactor = 0.10; //parallax shift factor, the bigger the value, the more it shift for parallax movement
 	var DashArray = new Array();
 	DashArray.push(DashDiv, DashX, DashY, DashFactor);
 	objectArray.push(DashArray);
-	
+
 
     }
 

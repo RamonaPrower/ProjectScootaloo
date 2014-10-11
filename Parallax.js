@@ -21,8 +21,8 @@ positionDivs();
 function fillObjectArray()
 {
 	var DashDiv = document.getElementById("HnnghMain");
-	   var DashX = 905; 
-	   var DashY = 145;
+	   var DashX = DashGlobalX; 
+	   var DashY = DashGlobalY;
 	var DashFactor = 0.10; 
 	var DashArray = [];
 	DashArray.push(DashDiv, DashX, DashY, DashFactor);

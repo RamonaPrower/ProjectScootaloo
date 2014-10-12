@@ -3,10 +3,19 @@ Position:fixed; z-index:-30;
 background-image:url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/flutterflight_spin_by_uxyd-d7h7aqb.png); width:45%; height:75%; background-size:contain;background-repeat:no-repeat;
 }
 
-.background {
+.HnnghClouds1{
+position: fixed; z-index: -32; background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/cloudsdale_by_ratchethun-d5aa8vu.png); width: 56%; height:65%; background-size: contain; background-repeat: no-repeat;
+}
+.HnnghFactory{
+position: fixed; z-index: -33; background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/rainbow_factory_by_azure_vortex-d4xb7gm.png); width: 56%; height:65%; background-size: contain; background-repeat: no-repeat;
+}
+.HnnghHouse{
+position: fixed; z-index: -31; background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/the_rainbow_cloud_mansion_by_sierraex-d4273qx.png); width: 56%; height:65%; background-size: contain; background-repeat: no-repeat;
+}
+body {
     position:relative;
     z-index: -40;
-height:100%;
+width:100%;
 background: url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/Background.png) fixed;
 background-size:cover;
 font-family: "enigmaticregular" sans-serif;

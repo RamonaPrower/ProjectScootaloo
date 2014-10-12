@@ -97,7 +97,7 @@ theLinks[41] = 'https://www.youtube.com/watch?v=aboZctrHfK8'
 theLinks[42] = 'http://rainbowdashalwaysdressesinstyle.com/Tumblr/8993.gif'
 theLinks[43] = 'https://www.youtube.com/watch?v=QwIDiJ_zd_k'
 theLinks[44] = 'https://www.youtube.com/embed/b1smWr5xrS8?autoplay=1&rel=0&start=5&end=13'
-theLinks[45] = 'https://www.youtube.com/embed/b1smWr5xrS8?autoplay=1&rel=0&start=5&end=38'
+theLinks[45] = 'https://www.youtube.com/embed/TKJLd_cQ068?autoplay=1&rel=0&start=5&end=38'
 theLinks[46] = 'https://www.youtube.com/embed/W9DST-6jIBU?autoplay=1&rel=0&start=183&end=189'
 theLinks[47] = 'https://www.youtube.com/embed/iEIlxdPXJUY?autoplay=1&rel=0&start=11&end=34'
 

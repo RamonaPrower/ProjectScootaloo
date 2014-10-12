@@ -1,3 +1,4 @@
+<!Doctype html>
 <html>
 <head>
 <!--SCOOTALOO 0.85 (Sweetie Branch) 
@@ -9,6 +10,8 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
         <meta name="color:Header Colour" content="#125e98"/>
         <meta name="if:Use Image URL instead" content="0"/>
         <meta name="text:Custom Image URL" content="http://rainbowdashalwaysdressesinstyle.com/Tumblr/FlyRDFly.png"/>
+        <meta name="text:Side Image x Percentage" content=""/>
+        <meta name="text:Side Image y Percentage" content=""/>
         <meta name="image:Side Image" content="{SideImage}"/>
         <meta name="text:Ask Text" content="Ask"/>
         <meta name="text:Submit Text" content="Submit"/>
@@ -23,6 +26,10 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 <link href='http://rainbowdashalwaysdressesinstyle.com/Tumblr/stylesheet.css' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/RandomImage.js"></script>
 <script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
+<script>var __adobewebfontsappname__ = "code"</script>
+    <script src="http://use.edgefonts.net/karla:n4,i4,i7,n7:all.js"></script>
+    <script>var DashGlobalX = {text:Side Image x Percentage}; </script>
+    <script>var DashGlobalY = {text:Side Image y Percentage}; </script>
 
 <style>
 .desc p
@@ -186,151 +193,231 @@ body
     float:left;
     transform-origin:center;
     }
-
-.posts .gey{opacity:1; -webkit-transition:0.4s ease-in-out;>-moz-transition:0.4s ease-in-out;transition:0.4s ease-in-out; border-radius: 10px 10px 10px 10px;}
-
-.posts:hover img{
-opacity:1 ; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; 
-}
-
-.HnnghMain {
-Position:fixed; z-index:-50; 
-Right:3%; bottom:0%;
+.posts .gey
+    {
+    opacity:1;
+    -webkit-transition:0.4s ease-in-out;
+    -moz-transition:0.4s ease-in-out;
+    transition:0.4s ease-in-out;
+    border-radius: 10px 10px 10px 10px;
+    }
+.posts:hover img
+    {
+    opacity:1 ;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    }
+.HnnghMain
+    {
+    Position:fixed;
+    z-index:-50;
+    Right:3%;
+    bottom:0%;
     {block:IfNotUseImageURLinstead}
     background-image:url({image:Side Image}); 
     {/block:IfNotUseImageURLinstead}
     {block:IfUseImageURLInstead}
     background-image:url({text:Custom Image URL});
     {/block:IfUseImageURLInstead}
-    width:67%; height:75%; background-size:contain;background-repeat:no-repeat;
-}
-
-.postbackground {
-width:43%; overflow:hidden;
-position:relative; height:85%; z-index:3; left:8%; top:0%;
-//float:left;
-}
+    width:67%;
+    height:75%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    }
+.postbackground
+    {
+    width:43%;
+    overflow:hidden;
+    position:relative;
+    height:85%;
+    z-index:3;
+    left:8%;
+    top:0%;
+    }
 
 #tags{color:{color:First};}
-
-.footer {
-width:30%; overflow:auto; padding-bottom: 12px; padding-top: 12px;
-position:fixed; z-index:6; left:58%; bottom:0px;
-text-align:center;
-background-color: {color:Second};
-border-radius: 8px;
-border-style:double;
-border-width:4px;
-border-color: #A6CCEA;
-box-shadow: inset 1px -1px 4px 2px #73AAD5;
-}
-.postnote {
+.footer
+    {
+    width:30%;
+    overflow:auto;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    position:fixed;
+    z-index:6;
+    left:58%;
+    bottom:0px;
+    text-align:center;
+    background-color: {color:Second};
+    border-radius: 8px;
+    border-style:double;
+    border-width:4px;
+    border-color: #A6CCEA;
+    box-shadow: inset 1px -1px 4px 2px #73AAD5;
+    }
+.postnote
+    {
     float:left;
-}
-.like_and_reblog_buttons {
-                display:block;
-                list-style:none;
-            }
-.like_and_reblog_buttons li {
-                display:block;
-                float:right;
-                left:8%;
-                margin:0px;
-                margin-top: -10px;
-                padding: 2px 5px;
-                height: 20px;
-               // background-color: {color:Second};
-                border-radius: 6px;
-              //  box-shadow: 2px 5px 12px #555;
-                vertical-align: middle;
-}
-.like_and_reblog_buttons li:first-child{
+    }
+.like_and_reblog_buttons
+    {
+    display:block;
+    list-style:none;
+    }
+.like_and_reblog_buttons li
+    {
+    display:block;
+    float:right;
+    left:8%;
+    margin:0px;
+    margin-top: -10px;
+    padding: 2px 5px;
+    height: 20px;
+    background-color: {color:Second};
+    border-radius: 6px;
+    box-shadow: 2px 5px 12px #555;
+    vertical-align: middle;
+    }
+.like_and_reblog_buttons li:first-child
+    {
     margin-right:0px;
-}
-
-.photoset{
-opacity:1; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out;  border-radius: 10px 10px 10px 10px;
+    }
+.photoset
+    {
+    opacity:1;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px 10px 10px 10px;
     max-width: 100%; 
     padding-left:6px;
-}
-.posts:hover .photoset{
-opacity:1 ; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; 
-}
-
-.vidya{
-opacity:1; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; border-radius: 10px 10px 10px 10px;
-     max-width: 100%; display: flex;
-}
-
-.posts:hover .vidya{
-opacity:1; -webkit-transition: 0.4s ease-in-out; >-moz-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; 
-}
-
-.notes{
+    }
+.posts:hover .photoset
+    {
+    opacity:1 ;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    }
+.vidya
+    {
+    opacity:1;
+    -webkit-transition: 0.4s ease-in-out;
+    >-moz-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px 10px 10px 10px;
+    max-width: 100%;
+    display: flex;
+    }
+.posts:hover .vidya
+    {
+    opacity:1;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    }
+.notes
+    {
     float:left;
     left:0px;
     top:10px;
     padding:5px 15px 5px 15px;
     font-family: "enigmaticregular", sans-serif;
     font-size:1.1em;
-}
-
-.posts .gey{
-    
+    }
+.posts .gey
+    {
     min-width:100%;
-   
-}
-
-.posts blockquote {
-      border-left: solid 2px;
-      color: {color:text};
-      margin-left:30px;
-      padding:0px 5px;
-}
-
-H1 { color: {color:text}; font-size: 3em; text-align:center; text-shadow: 2px 3px 5px #3073A7; margin:0;
-}
-
-H2 {margin-left: 10pt; text-shadow: 2px 3px 5px #3073A7; line-height: 1em;}
-p {margin-left: 10pt;  text-shadow: 2px 3px 5px #3073A7; width:97%}
-p.permalink {text-align:right; text-shadow: 2px 3px 5px #3073A7; margin:0pt 5pt 0pt 0pt;}
-p.description2 {margin-right: 80%; text-shadow: 2px 3px 5px #3073A7; margin-top:-10px; text-align:center;}
-li {margin-left: 10pt; text-shadow: 2px 3px 5px #3073A74; text-decoration: underline;}
-.linkty{
+    }
+.posts blockquote
+    {
+    border-left: solid 2px;
+    color: {color:text};
+    margin-left:30px;
+    padding:0px 5px;
+    }
+H1
+    {
+    color: {color:text};
+    font-size: 3em;
+    text-align:center;
+    text-shadow: 2px 3px 5px #3073A7;
+    margin:0;
+    }
+H2
+    {
+    margin-left: 10pt;
+    text-shadow: 2px 3px 5px #3073A7;
+    line-height: 1em;
+    }
+p
+    {
+    margin-left: 10pt;
+    text-shadow: 2px 3px 5px #3073A7;
+    width:97%
+    }
+p.permalink
+    {
+    text-align:right;
+    text-shadow: 2px 3px 5px #3073A7;
+    margin:0pt 5pt 0pt 0pt;
+    }
+p.description2
+    {
+    margin-right: 80%;
+    text-shadow: 2px 3px 5px #3073A7;
+    margin-top:-10px;
+    text-align:center;
+    }
+li
+    {
+    margin-left: 10pt;
+    text-shadow: 2px 3px 5px #3073A74;
+    text-decoration: underline;
+    }
+.linkty
+    {
     color:{color:first};
-}
+    }
 {CustomCSS}
 </style>
-</head> 
+    </head>
 <body>
 <div class=header>
-<h1><a href="http://the-sleepiest-cloud.tumblr.com/page/1">Ramona's Blerg</a></h1><br>
-<p class="description2">
-        {block:Description}
-            {Description}
-        {/block:Description}</p>
-<h2>
-<span class=linkty>| <a href="http://the-sleepiest-cloud.tumblr.com/ask" align="center">Ask</a> | <a href="http://the-sleepiest-cloud.tumblr.com/submit">Submit</a> |</span>
-
-</h2> 
+    <h1><a href="http://the-sleepiest-cloud.tumblr.com/page/1">Ramona's Blerg</a></h1><br>
+        <p class="description2">
+            {block:Description}
+                {Description}
+            {/block:Description}
+        </p>
+    <h2>
+        <span class=linkty>|
+            <a href="http://the-sleepiest-cloud.tumblr.com/ask">Ask</a> |
+            <a href="http://the-sleepiest-cloud.tumblr.com/submit">Submit</a> |
+        </span>
+    </h2>
 </div>
 <div class=avvy>
-<script language="JavaScript">
-showImage();
-</script>
+ <script type=text/javascript>
+        showImage();
+   </script>
 </div>
 <div class=footer>
-{block:Pagination}
-{block:PreviousPage}<a href={PreviousPage}>Previous</a>{/block:PreviousPage}
- <span class="currentpage" style="color:{color:text}">Page {CurrentPage} of {totalpages}</span>{block:NextPage}
-                <a  href="{NextPage}">Next</a>
-            {/block:NextPage}{/block:Pagination}<br>
-Theme by <a href="http://the-sleepiest-cloud.tumblr.com">Ramona Prower</a> and  <a href="http://braixy.tumblr.com">Braixy</a>, Powered by Tumblr.
+    {block:Pagination}
+    {block:PreviousPage}
+    <a href={PreviousPage}>Previous</a>
+    {/block:PreviousPage}
+    <span class="currentpage" style="color:{color:text}">Page {CurrentPage} of {totalpages}</span>
+    {block:NextPage}
+    <a  href="{NextPage}">Next</a>
+    {/block:NextPage}
+    {/block:Pagination}
+    <br>
+    Theme by <a href="http://the-sleepiest-cloud.tumblr.com">Ramona Prower</a> and  <a href="http://braixy.tumblr.com">Braixy</a>, Powered by Tumblr.
 </div>
-
 <div class="postbackground">
-<div class = "autopagerize_page_element" >
-            {block:Posts}
+    <div class = "autopagerize_page_element" >
+        {block:Posts}
                 {block:Text}
                 <div class="posts">
                     <p class="post text">
@@ -356,8 +443,7 @@ Theme by <a href="http://the-sleepiest-cloud.tumblr.com">Ramona Prower</a> and  
                 
                 {block:Photo}
                 <div class="posts">
-                    
-                        <center>{LinkOpenTag}<img src="{PhotoURL-1280}" width="395px" alt="{PhotoAlt}" class="gey">{LinkCloseTag}</center>
+                    {LinkOpenTag}<img style="align:Center" src="{PhotoURL-1280}" width="395px" alt="{PhotoAlt}" class="gey">{LinkCloseTag}
                         {block:Caption}
                             <div class="caption" width=59% >{Caption}</div>
                         {/block:Caption}

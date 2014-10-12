@@ -12,8 +12,9 @@ document.onmousemove = getMouseXY;
 var tempX = 0;
 var tempY = 0;
 
+//setting the Initial Window Width and Height to compare later
 var WindowWidth = window.outerWidth
-var windowHeight = window.outerHeight
+var WindowHeight = window.outerHeight
 
 var objectArray = [];
 
@@ -51,6 +52,21 @@ function getMouseXY(e)
 		tempX = e.clientX;
 		tempY = e.clientY;
 	  }  
+    //If window height or width changed from initial values, recalculate formula and refill object array
+     if (WindowHeight !== window.outerHeight)
+    {
+        WindowHeight = window.outerHeight
+        WindowWidth = window.outerWidth
+        fillObjectArray();
+    }
+    else if (WindowWidth !== window.outerWidth)
+    {
+      WindowHeight = window.outerHeight
+        WindowWidth = window.outerWidth
+        fillObjectArray();
+    }
+
+
 	  // catch possible negative values in NS4
 	  if (tempX < 0){tempX = 0;}
 	  if (tempY < 0){tempY = 0;}  

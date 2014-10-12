@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
 <head>
-<!--SCOOTALOO 0.85 (Sweetie Branch) 
+<!--SCOOTALOO 0.90 (Sweetie Branch) 
 Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
         <meta name="color:First" content="#a6ccea"/>
         <meta name="color:Second" content="#125e98"/>
@@ -21,22 +21,27 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 <div class="desc">
     {block:Description}
         <meta name="description" content="{MetaDescription}" />
-    {/block:Description}
+    {/block:Description} 
 </div>
 <link href='http://rainbowdashalwaysdressesinstyle.com/Tumblr/stylesheet.css' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/RandomImage.js"></script>
 <script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
-<script>var __adobewebfontsappname__ = "code"</script>
-    <script src="http://use.edgefonts.net/karla:n4,i4,i7,n7:all.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script>var DashGlobalX = {text:Side Image x Percentage}; </script>
     <script>var DashGlobalY = {text:Side Image y Percentage}; </script>
+    <script>var CloudGlobalX = -6; </script>
+    <script>var CloudGlobalY = 35; </script>
+    <script>var FactoryGlobalX = 15;</script>
+    <script>var FactoryGlobalY = -3;</script>
+    <script>var HouseGlobalX = 75</script>
+    <script>var HouseGlobalY = 30</script>
 
 <style>
 .desc p
     {
     text-align:center;
     }
-::-webkit-scrollbar
+::-webkit-scrollbar 
     {
     width: 7px;
     height: 7px;
@@ -71,7 +76,7 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
   background: transparent;
 }
 
-a:link
+a:link 
     {
     color: {color:First}; text-decoration: underline;
     -webkit-transition: color 200ms ease-in-out;
@@ -79,11 +84,11 @@ a:link
     -o-transition: color 200ms ease-in-out;
     transition: color 200ms ease-in-out;
     }
-a:visited
+a:visited 
     {
     color: {color:First}; text-decoration: none;
     }
-a:hover
+a:hover 
     {
     -webkit-transition: color 200ms ease-in-out;
     -moz-transition: color 200ms ease-in-out;
@@ -96,11 +101,11 @@ a:hover
     {
     text-align:center;
     }
-.header a:visited
+.header a:visited 
     {
     color: {color:text}; text-decoration: none;
     }
-.header a:hover
+.header a:hover 
     {
     -webkit-transition: color 400ms ease-in-out;
     -moz-transition: color 400ms ease-in-out;
@@ -108,7 +113,7 @@ a:hover
     transition: color 400ms ease-in-out;
     color: {color:Link hover}; text-decoration: none;
     }
-.header a:active
+.header a:active 
     {
     -webkit-transition: color 400ms ease-in-out;
     -moz-transition: color 400ms ease-in-out;
@@ -116,7 +121,7 @@ a:hover
     transition: color 400ms ease-in-out;
     color: {color:second}; text-decoration: none;
     }
-.header
+.header 
     {
     position:fixed; z-index:1; left:58%; top:1%; width:30%;
     margin-top:2px; margin-bottom:5px; text-align:left; padding-right: 12px;
@@ -127,19 +132,19 @@ a:hover
     border-width:4px;
     border-color: #A6CCEA;
     box-shadow: inset 1px -1px 4px 2px #73AAD5;
-    font-family: "enigmaticregular"  sans-serif;
+    font-family: 'Roboto', sans-serif;
     -webkit-transition: -webkit-transform 300ms ease-in-out;
     -moz-transition: -moz-transform 300ms ease-in-out;
     -o-transition: -o-transform 300ms ease-in-out;
     transition: transform 300ms ease-in-out;
     }
-body
+body   
     {
     margin: 0;
     padding: 0px;
     background:url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/Background.png) fixed;
     background-size:cover;
-    font-family: "enigmaticregular" sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     letter-spacing:.5px;
     color: {color:text};
@@ -147,26 +152,26 @@ body
     }
 .avvy img
     {
-    position:fixed; z-index:7; left:81%; top:9%; width:192px;
+    position:fixed; z-index:7; left:81%; top:9%; width:192px; 
     transition: width 0.4s;
     -moz-transition: width 0.4s; /* Firefox 4 */
     -webkit-transition: width 0.4s; /* Safari and Chrome */
     -o-transition: width 0.4s; /* Opera */
     -ms-transition: width 0.4s; /* IE9 (maybe) */
     }
-.avvy:hover
+.avvy:hover 
     {
     width:235px;
     }
-.headerBG
+.headerBG 
     {
     height:180px;
-    position:fixed;
-    z-index:5;
-    left:9%;
-    top:-18px;
+    position:fixed; 
+    z-index:5; 
+    left:9%; 
+    top:-18px; 
     right:30%;
-    margin-bottom:5px;
+    margin-bottom:5px; 
     text-align:left;
     background-color: {color:Header Colour};
     border-radius: 8px;
@@ -175,13 +180,13 @@ body
     border-color: #125E98;
     box-shadow: inset 1px -1px 10px 4px #125E98;
     }
-.posts
+.posts 
     {
-    position:static;
-    z-index:3;
-    left:8%;
-    width:97%;
-    margin:5px;
+    position:static;  
+    z-index:3; 
+    left:8%; 
+    width:97%; 
+    margin:5px; 
     margin-left:0px;
     padding:6px;
     background-color: #4D8DBE;
@@ -195,24 +200,24 @@ body
     }
 .posts .gey
     {
-    opacity:1;
+    opacity:1; 
     -webkit-transition:0.4s ease-in-out;
     -moz-transition:0.4s ease-in-out;
-    transition:0.4s ease-in-out;
+    transition:0.4s ease-in-out; 
     border-radius: 10px 10px 10px 10px;
     }
 .posts:hover img
     {
     opacity:1 ;
-    -webkit-transition: 0.4s ease-in-out;
-    -moz-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out; 
+    -moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out; 
     }
-.HnnghMain
+.HnnghMain 
     {
-    Position:fixed;
-    z-index:-50;
-    Right:3%;
+    Position:fixed; 
+    z-index:-30; 
+    Right:3%; 
     bottom:0%;
     {block:IfNotUseImageURLinstead}
     background-image:url({image:Side Image}); 
@@ -220,32 +225,62 @@ body
     {block:IfUseImageURLInstead}
     background-image:url({text:Custom Image URL});
     {/block:IfUseImageURLInstead}
-    width:67%;
-    height:75%;
+    width:67%; 
+    height:75%; 
     background-size:contain;
     background-repeat:no-repeat;
     }
-.postbackground
+    .HnnghClouds1
     {
-    width:43%;
+    position: fixed;
+    z-index: -32; 
+    background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/cloudsdale_by_ratchethun-d5aa8vu.png); 
+    width: 56%; 
+    height:65%; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    }
+.HnnghFactory
+    {
+    position: fixed; 
+    z-index: -33; 
+    background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/rainbow_factory_by_azure_vortex-d4xb7gm.png); 
+    width: 56%; 
+    height:65%; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    }
+.HnnghHouse
+    {
+    position: fixed; 
+    z-index: -31; 
+    background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/the_rainbow_cloud_mansion_by_sierraex-d4273qx.png); 
+    width: 56%; 
+    height:65%; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    }
+.postbackground 
+    {
+    width:43%; 
     overflow:hidden;
-    position:relative;
+    position:relative; 
     height:85%;
-    z-index:3;
+    z-index:3; 
     left:8%;
     top:0%;
     }
-
+ 
 #tags{color:{color:First};}
-.footer
+.footer 
     {
-    width:30%;
-    overflow:auto;
-    padding-bottom: 12px;
+    width:30%; 
+    overflow:auto; 
+    padding-bottom: 12px; 
     padding-top: 12px;
-    position:fixed;
-    z-index:6;
-    left:58%;
+    position:fixed; 
+    z-index:6; 
+    left:58%; 
     bottom:0px;
     text-align:center;
     background-color: {color:Second};
@@ -255,16 +290,16 @@ body
     border-color: #A6CCEA;
     box-shadow: inset 1px -1px 4px 2px #73AAD5;
     }
-.postnote
+.postnote 
     {
     float:left;
     }
-.like_and_reblog_buttons
+.like_and_reblog_buttons 
     {
     display:block;
     list-style:none;
     }
-.like_and_reblog_buttons li
+.like_and_reblog_buttons li 
     {
     display:block;
     float:right;
@@ -284,37 +319,37 @@ body
     }
 .photoset
     {
-    opacity:1;
-    -webkit-transition: 0.4s ease-in-out;
-    -moz-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
+    opacity:1; 
+    -webkit-transition: 0.4s ease-in-out; 
+    -moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out;  
     border-radius: 10px 10px 10px 10px;
     max-width: 100%; 
     padding-left:6px;
     }
 .posts:hover .photoset
     {
-    opacity:1 ;
-    -webkit-transition: 0.4s ease-in-out;
-    -moz-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
+    opacity:1 ; 
+    -webkit-transition: 0.4s ease-in-out; 
+    -moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out; 
     }
 .vidya
     {
-    opacity:1;
-    -webkit-transition: 0.4s ease-in-out;
-    >-moz-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
+    opacity:1; 
+    -webkit-transition: 0.4s ease-in-out; 
+    >-moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out; 
     border-radius: 10px 10px 10px 10px;
-    max-width: 100%;
+    max-width: 100%; 
     display: flex;
     }
 .posts:hover .vidya
     {
-    opacity:1;
-    -webkit-transition: 0.4s ease-in-out;
-    -moz-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
+    opacity:1; 
+    -webkit-transition: 0.4s ease-in-out; 
+    -moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out; 
     }
 .notes
     {
@@ -322,57 +357,57 @@ body
     left:0px;
     top:10px;
     padding:5px 15px 5px 15px;
-    font-family: "enigmaticregular", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size:1.1em;
     }
 .posts .gey
     {
     min-width:100%;
     }
-.posts blockquote
+.posts blockquote 
     {
     border-left: solid 2px;
     color: {color:text};
     margin-left:30px;
     padding:0px 5px;
     }
-H1
-    {
-    color: {color:text};
-    font-size: 3em;
-    text-align:center;
-    text-shadow: 2px 3px 5px #3073A7;
+H1 
+    { 
+    color: {color:text}; 
+    font-size: 3em; 
+    text-align:center; 
+    text-shadow: 2px 3px 5px #3073A7; 
     margin:0;
     }
-H2
+H2 
     {
-    margin-left: 10pt;
-    text-shadow: 2px 3px 5px #3073A7;
+    margin-left: 10pt; 
+    text-shadow: 2px 3px 5px #3073A7; 
     line-height: 1em;
     }
-p
+p 
     {
-    margin-left: 10pt;
-    text-shadow: 2px 3px 5px #3073A7;
+    margin-left: 10pt;  
+    text-shadow: 2px 3px 5px #3073A7; 
     width:97%
     }
-p.permalink
+p.permalink 
     {
-    text-align:right;
-    text-shadow: 2px 3px 5px #3073A7;
+    text-align:right; 
+    text-shadow: 2px 3px 5px #3073A7; 
     margin:0pt 5pt 0pt 0pt;
     }
-p.description2
+p.description2 
     {
-    margin-right: 80%;
-    text-shadow: 2px 3px 5px #3073A7;
-    margin-top:-10px;
+    margin-right: 80%; 
+    text-shadow: 2px 3px 5px #3073A7; 
+    margin-top:-10px; 
     text-align:center;
     }
-li
+li 
     {
-    margin-left: 10pt;
-    text-shadow: 2px 3px 5px #3073A74;
+    margin-left: 10pt; 
+    text-shadow: 2px 3px 5px #3073A74; 
     text-decoration: underline;
     }
 .linkty
@@ -391,11 +426,11 @@ li
             {/block:Description}
         </p>
     <h2>
-        <span class=linkty>|
-            <a href="http://the-sleepiest-cloud.tumblr.com/ask">Ask</a> |
+        <span class=linkty>| 
+            <a href="http://the-sleepiest-cloud.tumblr.com/ask">Ask</a> | 
             <a href="http://the-sleepiest-cloud.tumblr.com/submit">Submit</a> |
         </span>
-    </h2>
+    </h2> 
 </div>
 <div class=avvy>
  <script type=text/javascript>
@@ -644,6 +679,12 @@ li
 
 </div>
 {/block:IfUseImageURLInstead}
+<div class="HnnghClouds1" id="HnnghClouds1">
+    </div>
+    <div class="HnnghFactory" id="HnnghFactory">
+    </div>
+    <div class="HnnghHouse" id="HnnghHouse">
+    </div>
 <script type="text/javascript" src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/Parallax.js"></script>
 </body>
 </html>

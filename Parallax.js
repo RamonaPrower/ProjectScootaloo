@@ -12,6 +12,9 @@ document.onmousemove = getMouseXY;
 var tempX = 0;
 var tempY = 0;
 
+var WindowWidth = window.outerWidth
+var windowHeight = window.outerHeight
+
 var objectArray = [];
 
 fillObjectArray();
@@ -21,8 +24,8 @@ positionDivs();
 function fillObjectArray()
 {
 	var DashDiv = document.getElementById("HnnghMain");
-	   var DashX = DashGlobalX; 
-	   var DashY = DashGlobalY;
+	   var DashX = (window.outerWidth / 100) * DashGlobalX;
+	   var DashY = (window.outerHeight / 100) *  DashGlobalY;
 	var DashFactor = 0.10; 
 	var DashArray = [];
 	DashArray.push(DashDiv, DashX, DashY, DashFactor);
@@ -35,6 +38,7 @@ function fillObjectArray()
 
 function getMouseXY(e)
 {
+
 	  if (IE)
 	  {
 		// grab the x-y pos.s if browser is IE

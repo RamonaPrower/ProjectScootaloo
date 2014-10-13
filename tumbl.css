@@ -1,0 +1,426 @@
+body   
+    {
+    margin: 0;
+    padding: 0px;
+    background:url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/Background.png) fixed;
+    background-size:cover;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing:.5px;
+    color: {color:text};
+    cursor: url(http://static.tumblr.com/1yhsgvx/DArnchxvt/spe302.png), auto;
+    }
+    
+        /* TEXT */
+H1 
+    { 
+    color: {color:text}; 
+    font-size: 3em; 
+    text-align:center; 
+    text-shadow: 2px 3px 5px #3073A7; 
+    margin:0;
+    }
+H2 
+    {
+    margin-left: 10pt; 
+    text-shadow: 2px 3px 5px #3073A7; 
+    line-height: 1em;
+    }
+p 
+    {
+    margin-left: 10pt;  
+    text-shadow: 2px 3px 5px #3073A7; 
+    width:97%
+    }
+p.permalink 
+    {
+    text-align:right; 
+    text-shadow: 2px 3px 5px #3073A7; 
+    margin:0pt 5pt 0pt 0pt;
+    }
+p.description2 
+    {
+    margin-right: 80%; 
+    text-shadow: 2px 3px 5px #3073A7; 
+    margin-top:-10px; 
+    text-align:center;
+    }
+li 
+    {
+    margin-left: 10pt; 
+    text-shadow: 2px 3px 5px #3073A74; 
+    text-decoration: underline;
+    }
+    
+   
+desc p
+    {
+    text-align:center;
+    }
+    
+a:link 
+    {
+    color: {color:First}; text-decoration: underline;
+    -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
+    -o-transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
+    }
+    
+    
+a:visited 
+    {
+    color: {color:First}; text-decoration: none;
+    }
+a:hover 
+    {
+    -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
+    -o-transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
+    color: {color:link hover}; text-decoration: none;
+    }
+
+
+    #tags{color:{color:First};}
+     
+      /* END TEXT */
+::-webkit-scrollbar 
+    {
+    width: 7px;
+    height: 7px;
+    }
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffba5e;
+  border: 1px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffddaf;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ed8d0d;
+}
+::-webkit-scrollbar-track {
+  background: #3073a7;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #4d8dbe;
+}
+::-webkit-scrollbar-track:active {
+  background: #a6ccea;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+/* Header  styling */
+.header h2
+    {
+    text-align:center;
+    }
+.header a:visited 
+    {
+    color: {color:text}; text-decoration: none;
+    }
+.header a:hover 
+    {
+    -webkit-transition: color 400ms ease-in-out;
+    -moz-transition: color 400ms ease-in-out;
+    -o-transition: color 400ms ease-in-out;
+    transition: color 400ms ease-in-out;
+    color: {color:Link hover}; text-decoration: none;
+    }
+.header a:active 
+    {
+    -webkit-transition: color 400ms ease-in-out;
+    -moz-transition: color 400ms ease-in-out;
+    -o-transition: color 400ms ease-in-out;
+    transition: color 400ms ease-in-out;
+    color: {color:second}; text-decoration: none;
+    }
+.header 
+    {
+    position:fixed; z-index:1; left:58%; top:1%; width:30%;
+    margin-top:2px; margin-bottom:5px; text-align:left; padding-right: 12px;
+    color: {color:text};
+    background-color: {color:Second};
+    border-radius: 8px;
+    border-style:double;
+    border-width:4px;
+    border-color: #A6CCEA;
+    box-shadow: inset 1px -1px 4px 2px #73AAD5;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    -moz-transition: -moz-transform 300ms ease-in-out;
+    -o-transition: -o-transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    }
+    .headerBG 
+    {
+    height:180px;
+    position:fixed; 
+    z-index:5; 
+    left:9%; 
+    top:-18px; 
+    right:30%;
+    margin-bottom:5px; 
+    text-align:left;
+    background-color: {color:Header Colour};
+    border-radius: 8px;
+    border-style:double;
+    border-width:4px;
+    border-color: #125E98;
+    box-shadow: inset 1px -1px 10px 4px #125E98;
+    }
+    
+    /* end header */
+    
+    /* Footer Left bottom */
+    .footer 
+    {
+    width:30%; 
+    overflow:auto; 
+    padding-bottom: 12px; 
+    padding-top: 12px;
+    position:fixed; 
+    z-index:6; 
+    left:58%; 
+    bottom:0px;
+    text-align:center;
+    background-color: {color:Second};
+    border-radius: 8px;
+    border-style:double;
+    border-width:4px;
+    border-color: #A6CCEA;
+    box-shadow: inset 1px -1px 4px 2px #73AAD5;
+    }
+    /* END Footer Left bottom */
+    
+    /* Random image */
+.avvy img
+    {
+    position:fixed; z-index:7; left:81%; top:9%; width:192px; 
+    transition: width 0.4s;
+    -moz-transition: width 0.4s; /* Firefox 4 */
+    -webkit-transition: width 0.4s; /* Safari and Chrome */
+    -o-transition: width 0.4s; /* Opera */
+    -ms-transition: width 0.4s; /* IE9 (maybe) */
+    }
+.avvy:hover 
+    {
+    width:235px;
+    }
+    
+    /* end random image */
+    
+    /* posts */
+.posts 
+    {
+    position:static;  
+    z-index:3; 
+    left:8%; 
+    width:97%; 
+    margin:5px; 
+    margin-left:0px;
+    padding:6px;
+    background-color: #4D8DBE;
+    border-radius: 8px;
+    border-style:double;
+    border-width:4px;
+    border-color: #125E98;
+    box-shadow: inset 1px -1px 10px 4px #125E98;
+    float:left;
+    transform-origin:center;
+    }
+.posts .gey
+    {
+    opacity:1; 
+    -webkit-transition:0.4s ease-in-out;
+    -moz-transition:0.4s ease-in-out;
+    transition:0.4s ease-in-out; 
+    border-radius: 10px 10px 10px 10px;
+    }
+.posts:hover img
+    {
+    opacity:1 ;
+    -webkit-transition: 0.4s ease-in-out; 
+    -moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out; 
+    }
+    
+    /* end posts */
+    
+    
+    /* Post Block */
+    
+    .postbackground 
+    {
+    width:43%; 
+    overflow:hidden;
+    position:relative; 
+    height:85%;
+    z-index:3; 
+    left:8%;
+    top:0%;
+    }
+ 
+.postnote 
+    {
+    float:left;
+    }
+    
+    /* Like and Reblog */
+.like_and_reblog_buttons 
+    {
+    display:block;
+    list-style:none;
+    }
+.like_and_reblog_buttons li 
+    {
+    display:block;
+    float:right;
+    left:8%;
+    margin:0px;
+    margin-top: -10px;
+    padding: 2px 5px;
+    height: 20px;
+    background-color: {color:Second};
+    border-radius: 6px;
+    box-shadow: 2px 5px 12px #555;
+    vertical-align: middle;
+    }
+.like_and_reblog_buttons li:first-child
+    {
+    margin-right:0px;
+    }
+    
+    /* END Like and Reblog */
+    
+    /* Photoset */
+    
+.photoset
+    {
+    opacity:1; 
+    -webkit-transition: 0.4s ease-in-out; 
+    -moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out;  
+    border-radius: 10px 10px 10px 10px;
+    max-width: 100%; 
+    padding-left:6px;
+    }
+.posts:hover .photoset
+    {
+    opacity:1 ; 
+    -webkit-transition: 0.4s ease-in-out; 
+    -moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out; 
+    }
+    /* END Photoset */
+    
+    /* Video */
+.vidya
+    {
+    opacity:1; 
+    -webkit-transition: 0.4s ease-in-out; 
+    >-moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out; 
+    border-radius: 10px 10px 10px 10px;
+    max-width: 100%; 
+    display: flex;
+    }
+.posts:hover .vidya
+    {
+    opacity:1; 
+    -webkit-transition: 0.4s ease-in-out; 
+    -moz-transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out; 
+    }
+    /* END video */
+    
+    /* Misc */
+.notes
+    {
+    float:left;
+    left:0px;
+    top:10px;
+    padding:5px 15px 5px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.1em;
+    }
+.posts .gey
+    {
+    min-width:100%;
+    }
+.posts blockquote 
+    {
+    border-left: solid 2px;
+    color: {color:text};
+    margin-left:30px;
+    padding:0px 5px;
+    }
+    /* END Post Block */
+    
+    /* Background images */
+.HnnghMain 
+    {
+    Position:fixed; 
+    z-index:-30; 
+    Right:3%; 
+    bottom:0%;
+    {block:IfNotUseImageURLinstead}
+    background-image:url({image:Side Image}); 
+    {/block:IfNotUseImageURLinstead}
+    {block:IfUseImageURLInstead}
+    background-image:url({text:Custom Image URL});
+    {/block:IfUseImageURLInstead}
+    width:67%; 
+    height:75%; 
+    background-size:contain;
+    background-repeat:no-repeat;
+    }
+    .HnnghClouds1
+    {
+    position: fixed;
+    z-index: -32; 
+    background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/cloudsdale_by_ratchethun-d5aa8vu.png); 
+    width: 56%; 
+    height:65%; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    }
+.HnnghFactory
+    {
+    position: fixed; 
+    z-index: -33; 
+    background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/rainbow_factory_by_azure_vortex-d4xb7gm.png); 
+    width: 56%; 
+    height:65%; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    }
+.HnnghHouse
+    {
+    position: fixed; 
+    z-index: -31; 
+    background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/the_rainbow_cloud_mansion_by_sierraex-d4273qx.png); 
+    width: 56%; 
+    height:65%; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    }
+    
+    /* END Background images */
+
+.linkty
+    {
+    color:{color:first};
+    }
+{CustomCSS}

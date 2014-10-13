@@ -117,3 +117,4 @@ function positionDivs()
 		objectArray[i][0].style.top = objectArray[i][2] + "px";
 	}
 }
+

@@ -25,32 +25,32 @@ function fillObjectArray()
 {
 
 var DashDiv = document.getElementById("HnnghMain");
-	var DashX = (window.outerWidth / 100) * DashGlobalX; //position div from half width of the page
-	var DashY = (window.outerHeight / 100) * DashGlobalY;
+	var DashX = (WindowWidth / 100) * DashGlobalX; //position div from half width of the page
+	var DashY = (WindowHeight / 100) * DashGlobalY;
 	var DashFactor = 0.16; //parallax shift factor, the bigger the value, the more it shift for parallax movement
 	var DashArray = new Array();
 	DashArray.push(DashDiv, DashX, DashY, DashFactor);
 	objectArray.push(DashArray);
 
 	var Cloud1Div = document.getElementById("HnnghClouds1");
-	var Cloud1X = (window.outerWidth / 100) * CloudGlobalX;
-	var Cloud1Y = (window.outerHeight / 100) * CloudGlobalY;
+	var Cloud1X = (WindowWidth / 100) * CloudGlobalX;
+	var Cloud1Y = (WindowHeight / 100) * CloudGlobalY;
 	var Cloud1Factor = 0.02;
 	var Cloud1Array = new Array();
 	Cloud1Array.push(Cloud1Div, Cloud1X, Cloud1Y, Cloud1Factor);
 	objectArray.push(Cloud1Array);
 
     var FactoryDiv = document.getElementById("HnnghFactory");
-	var FactoryX = (window.outerWidth / 100) * FactoryGlobalX;
-	var FactoryY = (window.outerHeight / 100) * FactoryGlobalY;
+	var FactoryX = (WindowWidth / 100) * FactoryGlobalX;
+	var FactoryY = (WindowHeight / 100) * FactoryGlobalY;
 	var FactoryFactor = 0.01;
 	var FactoryArray = new Array();
 	FactoryArray.push(FactoryDiv, FactoryX, FactoryY, FactoryFactor);
 	objectArray.push(FactoryArray);
 
     var HouseDiv = document.getElementById("HnnghHouse");
-    var HouseX = (window.outerWidth / 100) * HouseGlobalX;
-    var HouseY = (window.outerHeight / 100) * HouseGlobalY;
+    var HouseX = (WindowWidth / 100) * HouseGlobalX;
+    var HouseY = (WindowHeight / 100) * HouseGlobalY;
     var HouseFactor = 0.04;
     var HouseArray = new Array();
     HouseArray.push(HouseDiv, HouseX, HouseY, HouseFactor);

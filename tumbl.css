@@ -2,7 +2,7 @@ body
     {
     margin: 0;
     padding: 0px;
-    background:url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/Background.png) fixed;
+    background:fixed;
     background-size:cover;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -131,32 +131,27 @@ a:hover
     }
 .header a:hover 
     {
-    -webkit-transition: color 400ms ease-in-out;
-    -moz-transition: color 400ms ease-in-out;
-    -o-transition: color 400ms ease-in-out;
-    transition: color 400ms ease-in-out;
+    -webkit-transition: color 1ms ease-in-out;
+    -moz-transition: color 1ms ease-in-out;
+    -o-transition: color 1ms ease-in-out;
+    transition: color 1ms ease-in-out;
     color: {color:Link hover}; text-decoration: none;
     }
 .header a:active 
     {
-    -webkit-transition: color 400ms ease-in-out;
-    -moz-transition: color 400ms ease-in-out;
-    -o-transition: color 400ms ease-in-out;
-    transition: color 400ms ease-in-out;
+    -webkit-transition: color 1ms ease-in-out;
+    -moz-transition: color 1ms ease-in-out;
+    -o-transition: color 1ms ease-in-out;
+    transition: color 1ms ease-in-out;
     color: {color:second}; text-decoration: none;
     }
 .header 
     {
-    position:fixed; z-index:1; left:58%; top:1%; width:30%;
+    position:relative; z-index:1; left:0%; top:1%;width: 97%;
     margin-top:2px; margin-bottom:5px; text-align:left; padding-right: 12px;
     color: {color:text};
     background-color: {color:Second};
-    border-radius: 8px;
-    border-style:double;
-    border-width:4px;
-    border-color: #A6CCEA;
-    box-shadow: inset 1px -1px 4px 2px #73AAD5;
-    font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
     -webkit-transition: -webkit-transform 300ms ease-in-out;
     -moz-transition: -moz-transform 300ms ease-in-out;
     -o-transition: -o-transform 300ms ease-in-out;
@@ -173,11 +168,7 @@ a:hover
     margin-bottom:5px; 
     text-align:left;
     background-color: {color:Header Colour};
-    border-radius: 8px;
-    border-style:double;
-    border-width:4px;
-    border-color: #125E98;
-    box-shadow: inset 1px -1px 10px 4px #125E98;
+   
     }
     
     /* end header */
@@ -195,12 +186,7 @@ a:hover
     bottom:0px;
     text-align:center;
     background-color: {color:Second};
-    border-radius: 8px;
-    border-style:double;
-    border-width:4px;
-    border-color: #A6CCEA;
-    box-shadow: inset 1px -1px 4px 2px #73AAD5;
-    }
+     }
     /* END Footer Left bottom */
     
     /* Random image */
@@ -231,11 +217,7 @@ a:hover
     margin-left:0px;
     padding:6px;
     background-color: #4D8DBE;
-    border-radius: 8px;
-    border-style:double;
-    border-width:4px;
-    border-color: #125E98;
-    box-shadow: inset 1px -1px 10px 4px #125E98;
+ 
     float:left;
     transform-origin:center;
     }
@@ -384,36 +366,6 @@ a:hover
     height:75%; 
     background-size:contain;
     background-repeat:no-repeat;
-    }
-    .HnnghClouds1
-    {
-    position: fixed;
-    z-index: -32; 
-    background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/cloudsdale_by_ratchethun-d5aa8vu.png); 
-    width: 56%; 
-    height:65%; 
-    background-size: contain; 
-    background-repeat: no-repeat;
-    }
-.HnnghFactory
-    {
-    position: fixed; 
-    z-index: -33; 
-    background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/rainbow_factory_by_azure_vortex-d4xb7gm.png); 
-    width: 56%; 
-    height:65%; 
-    background-size: contain; 
-    background-repeat: no-repeat;
-    }
-.HnnghHouse
-    {
-    position: fixed; 
-    z-index: -31; 
-    background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/the_rainbow_cloud_mansion_by_sierraex-d4273qx.png); 
-    width: 56%; 
-    height:65%; 
-    background-size: contain; 
-    background-repeat: no-repeat;
     }
     
     /* END Background images */

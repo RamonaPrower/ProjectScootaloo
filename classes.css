@@ -6,16 +6,6 @@ Position:fixed; z-index:-30;
 background-image:url(http://rainbowdashalwaysdressesinstyle.com/Tumblr/flutterflight_spin_by_uxyd-d7h7aqb.png); width:45%; height:75%; background-size:contain;background-repeat:no-repeat;
 }
 
-.HnnghClouds1{
-position: fixed; z-index: -32; background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/cloudsdale_by_ratchethun-d5aa8vu.png); width: 56%; height:65%; background-size: contain; background-repeat: no-repeat;
-}
-.HnnghFactory{
-position: fixed; z-index: -33; background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/rainbow_factory_by_azure_vortex-d4xb7gm.png); width: 56%; height:65%; background-size: contain; background-repeat: no-repeat;
-}
-.HnnghHouse{
-position: fixed; z-index: -31; background-image: url(https://rainbowdashalwaysdressesinstyle.com/Tumblr/the_rainbow_cloud_mansion_by_sierraex-d4273qx.png); width: 56%; height:65%; background-size: contain; background-repeat: no-repeat;
-}
-
 .avvy img{
      position:fixed; z-index:7; left:81%; top:9%; width:192px; 
      transition: width 0.4s;
@@ -30,20 +20,17 @@ width:235px;
 }
 
 .header {
-position:fixed; z-index:1; left:58%; top:1%; width:30%;
+position:fixed; z-index:1; left:8%; top:1%; width:30%;
 margin-top:2px; margin-bottom:5px; text-align:left; padding-right: 12px;
 color: #a6ccea;
 background-color: #125e98;
-border-radius: 8px;
-border-style:double;
-border-width:4px;
-border-color: #A6CCEA;
 box-shadow: inset 1px -1px 4px 2px #73AAD5;
 font-family: "enigmaticregular"  sans-serif;
 -webkit-transition: -webkit-transform 300ms ease-in-out;
 -moz-transition: -moz-transform 300ms ease-in-out;
 -o-transition: -o-transform 300ms ease-in-out;
 transition: transform 300ms ease-in-out;
+  
 }
 .header h2{
     text-align:center;
@@ -73,11 +60,6 @@ float:left;
 position:relative;z-index:3; left:8%; width:97%; margin:5px; 
 padding:6px;
 background-color: #4D8DBE;
-border-radius: 8px;
-border-style:double;
-border-width:4px;
-border-color: #125E98;
-box-shadow: inset 1px -1px 10px 4px #125E98;
 float:left;
 transform-origin:center;
 }

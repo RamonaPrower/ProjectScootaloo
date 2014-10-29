@@ -3,9 +3,12 @@
 <head>
     <link rel="stylesheet" type="text/css" href="RDStyleSheet.css">
     <link rel="stylesheet" type="text/css" href="classes.css">
-    <script type="text/javascript" src="RandomImage.js"></script>
+    <script type="text/javascript" src="YTHandler.js"></script>
+    <script type="text/javascript" src="NewRandomImage.js"></script>
     <script>var __adobewebfontsappname__ = "code"</script>
     <script src="http://use.edgefonts.net/karla:n4,i4,i7,n7:all.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/2.1.1/jquery.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.css3finalize/3.4.0/jquery.css3finalize.js"></script>
     <script>var DashGlobalX = 50; </script>
     <script>var DashGlobalY = 13; </script>
     <script>var CloudGlobalX = -6; </script>
@@ -14,6 +17,14 @@
     <script>var FactoryGlobalY = -3;</script>
     <script>var HouseGlobalX = 75</script>
     <script>var HouseGlobalY = 30</script> 
+    <script> function ShowStuff() {
+    document.getElementById("toggle").style.visibility = "visible";
+    document.getElementById("toggle2").style.visibility = "visible";
+    }</script>
+    <script> function HideStuff() {
+    document.getElementById("toggle").style.visibility = "hidden";
+    document.getElementById("toggle2").style.visibility = "hidden";
+    }</script>
 </head>
 <body>
       <!--This is just a test page for various things, this will be more complete as i test more things, and will probably undergo a re-write to serve as a hub-->
@@ -26,7 +37,7 @@
     </div>
     <div class="HnnghHouse" id="HnnghHouse">
     </div>
-    <div class=avvy>
+    <div class=avvy onclick="ShowStuff()">
         <script>
             showImage();
         </script>
@@ -37,8 +48,14 @@
         <h2>The Above should be a title, this is h2</h2>
         <h3>This is h3</h3>
     </div>
-
-
+    <div class="popup" id="toggle"> 
+    <script>
+        
+        </script>
+    </div>
+    <div class="popupbackground" id="toggle2" onclick="HideStuff();DerenderVideo();">
+        
+        </div>
       
     </body>  
     </html>

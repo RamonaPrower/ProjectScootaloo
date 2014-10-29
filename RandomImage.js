@@ -112,6 +112,7 @@ for (i = 0; i < p; i++){
 }
 
 var whichImage = Math.round(Math.random()*(p-1));
+
 function showImage(){
 document.write('<a href="'+theLinks[whichImage]+'"> <img src="'+theImages[whichImage]+'" class=avvy> </a>');
 }

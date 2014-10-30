@@ -21,6 +21,18 @@ var objectArray = new Array();
 fillObjectArray();
 positionDivs();
 
+var stopped = 0;
+
+function pauseParallax()
+{
+    stopped = 1
+}
+function startParallax()
+
+{
+    stopped = 0
+}
+
 function fillObjectArray()
 {
 
@@ -94,9 +106,11 @@ function getMouseXY(e)
 	  if (tempX < 0){tempX = 0;}
 	  if (tempY < 0){tempY = 0;}  
 	  
-	 
+	 if (stopped == 0)
+     {
       moveDiv(tempX);
     return true;
+     }
 }
 function moveDiv(tempX)
 {	

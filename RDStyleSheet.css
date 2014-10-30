@@ -10,13 +10,13 @@ background-size:cover;
 font-family: "enigmaticregular" sans-serif;
 font-size: 12px;
 letter-spacing:.5px;
-color: {color:text};
+color:#fff;
 
 
 }
 
 
-H1 { color: {color:text}; font-size: 3em; text-align:center; text-shadow: 2px 3px 5px #3073A7; margin:0;
+H1 { color: ; font-size: 3em; text-align:center; text-shadow: 2px 3px 5px #3073A7; margin:0;
 }
 
 H2 {margin-left: 10pt; text-shadow: 2px 3px 5px #3073A7; line-height: 1em;}

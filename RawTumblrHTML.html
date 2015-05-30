@@ -32,6 +32,12 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 <script type="text/javascript" src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/RandomImage.js"></script>
 <script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ 
+<!--Resources for Photoset plugin + Custom lightbox. Photoset plugin breaks default tumblr lightbox on Photosets-->
+<link rel="stylesheet" href="https://rainbowdashalwaysdressesinstyle.com/starch/tmblrtheme/colorbox/colorbox.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://static.tumblr.com/wgijwsy/jgemkyt9x/jquery.photoset-grid.min.js"></script>
+<script src="https://rainbowdashalwaysdressesinstyle.com/starch/tmblrtheme/colorbox/jquery.colorbox-min.js"></script>
 
     <script>var DashGlobalX = {text:Side Image x Percentage}; </script>
     <script>var DashGlobalY = {text:Side Image y Percentage}; </script>
@@ -41,7 +47,6 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
     <script>var FactoryGlobalY = -3;</script>
     <script>var HouseGlobalX = 75</script>
     <script>var HouseGlobalY = 30</script>
-
     </head>
     
 <body>
@@ -96,9 +101,9 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
                         {/block:Title}
                         {Body}
                     </p>
-{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+{block:HasTags}<div class="tags_fix"><p class="permalink" id="tags">Tagged: {block:Tags}
 <a href="{TagURL}">{Tag}</a><span class="comma">, </span>
-{/block:Tags}{/block:HasTags}<br><br>
+{/block:Tags}</div>{/block:HasTags}<br><br>
 {block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
                         </p>
 <div class="fadein">
@@ -111,16 +116,20 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 </div>
                 {/block:Text}
                 
+    
+    
                 {block:Photo}
                 <div class="posts">
-                    {LinkOpenTag}<img style="align:Center" src="{PhotoURL-1280}" width="395px" alt="{PhotoAlt}" class="gey">{LinkCloseTag}
-                        {block:Caption}
-                            <div class="caption" width=59% >{Caption}</div>
-                        {/block:Caption}
+                    <div class="photo">
+                        {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}
+                    </div>
+                    {block:Caption}
                     
-{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+                        <div class="caption" width=59% >{Caption}</div>
+                    {/block:Caption}
+{block:HasTags}<div class="tags_fix"><p class="permalink" id="tags">Tagged: {block:Tags}
 <a href="{TagURL}">{Tag}</a><span class="comma">, </span>
-{/block:Tags}{/block:HasTags}<br><br>
+{/block:Tags}</div>{/block:HasTags}<br><br>
 {block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
                        
 <div class="fadein">
@@ -133,17 +142,24 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 
                         </div>
                 {/block:Photo}
+    
                 {block:Photoset}
                 <div class="posts">
-                    <p class="post photoset">
-                       <center><div class="photoset"> {Photoset-400}</div></center>
-                        {block:Caption}
-                            <div class="caption">{Caption}</div>
-                        {/block:Caption}
-                    </p>
-{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+                    <div class="photoset">
+                        <div class="photoset-grid" data-layout="{PhotosetLayout}">
+                            {block:Photos}
+                                <img src="{PhotoURL-500}"
+                                    {block:HighRes}data-highres="{PhotoURL-HighRes}"{/block:HighRes}
+                                    {block:Caption}{Caption}{/block:Caption} />
+                            {/block:Photos}
+                        </div>
+                    </div>
+                    {block:Caption}
+                        <div class="caption">{Caption}</div>
+                    {/block:Caption}
+{block:HasTags}<div class="tags_fix"><p class="permalink" id="tags">Tagged: {block:Tags}
 <a href="{TagURL}">{Tag}</a><span class="comma">, </span>
-{/block:Tags}{/block:HasTags}<br><br>
+{/block:Tags}</div>{/block:HasTags}<br><br>
 {block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
                         </p>
 <div class="fadein">
@@ -165,9 +181,9 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
                             <div class="source">- {Source}</div>
                         {/block:Source}
                     </p>
-{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+{block:HasTags}<div class="tags_fix"><p class="permalink" id="tags">Tagged: {block:Tags}
 <a href="{TagURL}">{Tag}</a><span class="comma">, </span>
-{/block:Tags}{/block:HasTags}<br><br>
+{/block:Tags}</div>{/block:HasTags}<br><br>
 {block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
                         </p>
 <div class="fadein">
@@ -188,9 +204,9 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
                             <div class="description">{Description}</div>
                         {/block:Description}</p>
                     </p>
-{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+{block:HasTags}<div class="tags_fix"><p class="permalink" id="tags">Tagged: {block:Tags}
 <a href="{TagURL}">{Tag}</a><span class="comma">, </span>
-{/block:Tags}{/block:HasTags}<br><br>
+{/block:Tags}</div>{/block:HasTags}<br><br>
 {block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
                         </p>
 {block:PostNotes}{PostNotes}{/block:PostNotes}
@@ -221,9 +237,9 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
                             {/block:Lines}
                         </p>
                     </p>
-                     {block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+{block:HasTags}<div class="tags_fix"><p class="permalink" id="tags">Tagged: {block:Tags}
 <a href="{TagURL}">{Tag}</a><span class="comma">, </span>
-{/block:Tags}{/block:HasTags}<br><br>
+{/block:Tags}</div>{/block:HasTags}<br><br>
 {block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
                         </p>
 <div class="fadein">
@@ -244,9 +260,10 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
                     </p>
-                       {block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+
+{block:HasTags}<div class="tags_fix"><p class="permalink" id="tags">Tagged: {block:Tags}
 <a href="{TagURL}">{Tag}</a><span class="comma">, </span>
-{/block:Tags}{/block:HasTags}<br><br>
+{/block:Tags}</div>{/block:HasTags}<br><br>
 {block:Date}<a href="{Permalink}" class="notes" >{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
                         </p>
 <div class="fadein">
@@ -262,9 +279,9 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
  {block:Answer}
 <div class="posts">
 <p><img src="{AskerPortraitURL-30}"> {Asker} asked: {Question} {Answer}</p>
-{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+{block:HasTags}<div class="tags_fix"><p class="permalink" id="tags">Tagged: {block:Tags}
 <a href="{TagURL}">{Tag}</a><span class="comma">, </span>
-{/block:Tags}{/block:HasTags}<br><br>
+{/block:Tags}</div>{/block:HasTags}<br><br>
 {block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
                         </p>
 <div class="fadein">
@@ -280,14 +297,15 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
                 {block:Audio}
                 <div class="posts">
                     <p class="post audio">
-                        {AudioPlayerBlack}
+                        {block:AudioPlayer}{AudioPlayer}{/block:AudioPlayer}
+                        {block:AudioEmbed}<div class="soundcloud">{AudioEmbed-250}</div>{/block:AudioEmbed}
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
                     </p>
-{block:HasTags}<p class="permalink" id="tags">Tagged: {block:Tags}
+{block:HasTags}<div class="tags_fix"><p class="permalink" id="tags">Tagged: {block:Tags}
 <a href="{TagURL}">{Tag}</a><span class="comma">, </span>
-{/block:Tags}{/block:HasTags}<br><br>
+{/block:Tags}</div>{/block:HasTags}<br><br>
 {block:Date}<a href="{Permalink}" class="notes">{NoteCountWithLabel}<br>{12Hour}:{Minutes} {CapitalAMPM} on {MonthNumber}/{DayofMonth}/{ShortYear}</a>{/block:Date}
                         </p>
 <div class="fadein">
@@ -325,7 +343,27 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
     </div>
     <div class="HnnghHouse" id="HnnghHouse">
     </div>
-<script type="text/javascript" src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/Parallax.js"></script>
+<script type="text/javascript" src="https://rainbowdashalwaysdressesinstyle.com/Tumblr/Parallax.js"></script>
 <!-- END Background image -->
+
+<!--Photoset Plugin-->
+<script>
+    $('.photoset-grid').photosetGrid({
+        gutter: '5px',
+        highresLinks: true,
+        onComplete: function(){
+            $('.photoset-grid').attr('style', '');
+            $('.photoset-grid a').colorbox({
+                rel:'gallery-all',
+                photo:true,
+                scalePhotos:true,
+                maxHeight:'100%',
+                maxWidth:'75%'
+            });
+        }
+    });
+</script>
+<!--End Photoset Plugin-->
+
 </body>
 </html>

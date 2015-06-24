@@ -474,6 +474,15 @@ a:hover
     margin-left:30px;
     padding:0px 5px;
     }
+.post blockquote:first-of-type
+    {
+    width: 100%;
+    }
+.posts blockquote img
+    {
+    max-width: 100%;
+    height: auto;
+    }
 .HnnghMain
     {
     Position:fixed;
@@ -717,6 +726,10 @@ li
     
 <!--Run Infinite Scrolling + Format w/ Photoset grid-->
 <script type="text/javascript">
+    
+    /*For Pagecounter*/
+    var currentPage = 2
+    
     $(document).ready(function() {
         $('.autopagerize_page_element').infinitescroll({
             navSelector: "div.loadnext",
@@ -727,26 +740,68 @@ li
                 msgText: "",
                 finishedMsg: ""
             },
-        }, function(arrayOfNewElems){
-            for (x in arrayOfNewElems) {
-                $('.photoset-grid').photosetGrid({
-                    gutter: '5px',
-                    highresLinks: true,
-                    onComplete: function(){
-                        $('.photoset-grid').attr('style', '');
-                        $('.photoset-grid a').colorbox({
-                            rel:'gallery-all',
-                            photo:true,
-                            scalePhotos:true,
-                            maxHeight:'100%',
-                            maxWidth:'75%'
-                        });
-                    }
-                })
-            }
+        }, function(newElements){
+            $('.photoset-grid').photosetGrid({
+                gutter: '5px',
+                highresLinks: true,
+                onComplete: function(){
+                    $('.photoset-grid').attr('style', '');
+                    $('.photoset-grid a').colorbox({
+                        rel:'gallery-all',
+                        photo:true,
+                        scalePhotos:true,
+                        maxHeight:'100%',
+                        maxWidth:'75%'
+                    });
+                }
+            });
+            
+            /*For Pagecounter*/
+            $(newElements).append('<div class="pageNumber" id="'+currentPage+'"style="width:0px; height:0px; background:red; float:left;"></div>');
+            currentPage += 1;
+        });
+        
+        /*Pagecounter*/
+        $('.posts').append('<div class="pageNumber" id="{currentPage}" style="width:0px; height:0px; background:red; float:left;"></div>');
+        
+        currentlyChecking = true;
+		$(document).scroll(function () {
+            var newFirst = false;
+            function isElementVisible() { // Find the first visible pageNumber div
+                var scrollTop = $(window).scrollTop();
+                var windowHeight = $(window).height();		
+                var first = false;
+                $(".pageNumber").each( function() {
+                    var offset = $(this).offset();
+                    if (scrollTop <= offset.top && ($(this).height() + offset.top) < (scrollTop + windowHeight) && first == false) {
+                        $(this).addClass("first");
+                        first=true;
+                        newFirst=true;
+                    } else {
+                        $(this).removeClass("first");
+                        first=false;
+                    };
+                });
+                if ($(".first")[0]){ return(true); }
+                else { return(false); };
+            };
+            
+           isOnScreen = isElementVisible();
+           if(isOnScreen == true && currentlyChecking == true){ // If Page number div is visible
+              document.getElementById('pageLink').innerHTML = $('.first').attr('id');
+              document.getElementById('pageLink').href = "{BlogURL}" + "page/" + $('.first').attr('id');
+              currentlyChecking = false
+           }
+           else if (isOnScreen == true && newFirst == true){
+              document.getElementById('pageLink').innerHTML = $('.first').attr('id');
+              document.getElementById('pageLink').href = "{BlogURL}" + "page/" + $('.first').attr('id');
+              newFirst=false;
+           }
+           else if (isOnScreen == false && currentlyChecking == false){ // If Page number div is not visible
+              currentlyChecking = true
+           };
         });
     });
-
 </script>
     
     
@@ -778,7 +833,7 @@ li
     {block:PreviousPage}
     <a href="{PreviousPage}">Previous</a>
     {/block:PreviousPage}
-    <span class="currentpage" style="color:{color:text}">Page {CurrentPage} of {totalpages}</span>
+    <span class="currentpage" style="color:{color:text}">Page <span class="pageDisplay" style=""><a id="pageLink" href='{block:CurrentPage}{URL}{/block:CurrentPage}'>{currentPage}</a></span> of {totalpages}</span>
     {block:NextPage}
     <span id="Next" style="display: inline;">
     <a  href="{NextPage}">Next</a>
@@ -1015,15 +1070,17 @@ li
 <br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
 </div>
                 {/block:Audio}
-
-            <!--Infinite scrolling loads the next page when it reaches this-->
-            {block:Post6}<div class="loadnext" style="float: left;"></div>{/block:Post6}
+            {block:Post6}
+                <div class="loadnext" style="float: left;"></div>
+            {/block:Post6}
 
             {/block:Posts}
             </div>
 <br>
 <br>
 </div>
+
+<!--Infinite scrolling loads the next page when it reaches this-->
 
 {block:IfNotUseImageURLinstead}
 <div class=HnnghMain id=HnnghMain>

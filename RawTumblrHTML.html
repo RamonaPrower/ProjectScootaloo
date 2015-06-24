@@ -30,7 +30,6 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 <link href='http://rainbowdashalwaysdressesinstyle.com/Tumblr/stylesheet.css' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/RandomImage.js"></script>
-<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
  
 <!--Resources for Photoset plugin + Custom lightbox. Photoset plugin breaks default tumblr lightbox on Photosets-->
@@ -38,6 +37,7 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="http://static.tumblr.com/wgijwsy/jgemkyt9x/jquery.photoset-grid.min.js"></script>
 <script src="https://rainbowdashalwaysdressesinstyle.com/starch/tmblrtheme/colorbox/jquery.colorbox-min.js"></script>
+<script src="https://rainbowdashalwaysdressesinstyle.com/starch/tmblrtheme/jquery.infinitescroll.min.js"></script>
 
     <script>var DashGlobalX = {text:Side Image x Percentage}; </script>
     <script>var DashGlobalY = {text:Side Image y Percentage}; </script>
@@ -47,6 +47,40 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
     <script>var FactoryGlobalY = -3;</script>
     <script>var HouseGlobalX = 75</script>
     <script>var HouseGlobalY = 30</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.autopagerize_page_element').infinitescroll({
+            navSelector: "div.loadnext",
+            nextSelector: "span#Next a:link",
+            itemSelector: ".posts",
+            loading: {
+                img: "http://rainbowdashalwaysdressesinstyle.com/starch/tmblrtheme/images/infinite-scroll-loading-img.png",
+                msgText: "",
+                finishedMsg: ""
+            },
+        }, function(arrayOfNewElems){
+            for (x in arrayOfNewElems) {
+                $('.photoset-grid').photosetGrid({
+                    gutter: '5px',
+                    highresLinks: true,
+                    onComplete: function(){
+                        $('.photoset-grid').attr('style', '');
+                        $('.photoset-grid a').colorbox({
+                            rel:'gallery-all',
+                            photo:true,
+                            scalePhotos:true,
+                            maxHeight:'100%',
+                            maxWidth:'75%'
+                        });
+                    }
+                })
+            }
+        });
+    });
+
+</script>
+    
     </head>
     
 <body>
@@ -77,11 +111,13 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 <div class=footer>
     {block:Pagination}
     {block:PreviousPage}
-    <a href={PreviousPage}>Previous</a>
+    <a href="{PreviousPage}">Previous</a>
     {/block:PreviousPage}
     <span class="currentpage" style="color:{color:text}">Page {CurrentPage} of {totalpages}</span>
     {block:NextPage}
+    <span id="Next" style="display: inline;">
     <a  href="{NextPage}">Next</a>
+    </span>
     {/block:NextPage}
     {/block:Pagination}
     <br>
@@ -317,6 +353,10 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 <br><br><div class="postnote">{block:PostNotes}{PostNotes}{/block:PostNotes}</div>
 </div>
                 {/block:Audio}
+
+            <!--Infinite scrolling loads the next page when it reaches this-->
+            {block:Post6}<div class="loadnext" style="float: left;"></div>{/block:Post6}
+
             {/block:Posts}
             </div>
 <br>
@@ -324,7 +364,6 @@ Let's consider this a new branch of Project Scootaloo, thanks to Braixy-->
 </div>
 
 <!-- END post block -->
-
 
 <!-- Background image -->
 {block:IfNotUseImageURLinstead}

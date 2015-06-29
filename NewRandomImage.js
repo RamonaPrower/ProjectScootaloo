@@ -135,7 +135,7 @@ theEmbedCode[25] = 'dE-IoRk1qgk'
 theEmbedCode[26] = 'http://i.imgur.com/C4idW6A.jpg'
 theEmbedCode[27] = 'iDbyYGrswtg'
 theEmbedCode[28] = 'POZ4CcJILWw'
-theEmbedCode[29] = 'http://rainbowdashalwaysdressesinstyle.com/Tumblr/video/CodeMonkey.swf' //i will make a RenderFlash at some point but i'm too lazy today
+theEmbedCode[29] = 'https://rainbowdashalwaysdressesinstyle.com/Tumblr/video/CodeMonkey.swf' //i will make a RenderFlash at some point but i'm too lazy today
 theEmbedCode[30] = 'tXjtATYG72w'
 theEmbedCode[31] = 'OlRgazC3UAE'
 theEmbedCode[32] = '8GFnOGPGoOA'
@@ -148,7 +148,7 @@ theEmbedCode[38] = 'QMMceB61JH0'
 theEmbedCode[39] = 'utaWZT5N-tQ'
 theEmbedCode[40] = 'sJeBTCzILzw'
 theEmbedCode[41] = 'aboZctrHfK8'
-theEmbedCode[42] = 'http://rainbowdashalwaysdressesinstyle.com/images/Tumblr/8993.gif'
+theEmbedCode[42] = 'https://rainbowdashalwaysdressesinstyle.com/images/Tumblr/8993.gif'
 theEmbedCode[43] = 'QwIDiJ_zd_k'
 theEmbedCode[44] = 'b1smWr5xrS8'
 theEmbedCode[45] = 'TKJLd_cQ068'
@@ -219,7 +219,7 @@ theExtras[5] = ''
 theExtras[6] = ''
 theExtras[7] = ''
 theExtras[8] = 'style="width: 100%;"'
-theExtras[9] = '&start=93.2&end=96.4'
+theExtras[9] = '&start=93&end=97'
 theExtras[10] = ''
 theExtras[11] = ''
 theExtras[12] = ''
@@ -256,15 +256,15 @@ theExtras[42] = '"'
 theExtras[43] = ''
 theExtras[44] = '&start=5&end=13'
 theExtras[45] = '&start=5&end=38'
-theExtras[46] = '&start=183&end=189.5'
-theExtras[47] = '&start=11&end=33.75'
-theExtras[48] = '&end=10.5'
+theExtras[46] = '&start=183&end=189'
+theExtras[47] = '&start=11&end=34'
+theExtras[48] = '&end=11'
 theExtras[49] = ''
 theExtras[50] = ''
 theExtras[51] = ''
-theExtras[52] = '&start=170&end=192.8'
+theExtras[52] = '&start=170&end=193'
 theExtras[53] = ''
-theExtras[54] = '&start=152.5'
+theExtras[54] = '&start=152'
 theExtras[55] = ''
 theExtras[56] = ''
 theExtras[57] = ''
@@ -289,11 +289,11 @@ theExtras[75] = ''
 theExtras[76] = ''
 theExtras[77] = ''
 theExtras[78] = ''
-theExtras[79] = '&end=9.9'
+theExtras[79] = '&end=10'
 theExtras[80] = ''
 theExtras[81] = ''
 theExtras[82] = ''
-theExtras[83] = '&start=48.5&end=60.3'
+theExtras[83] = '&start=48&end=60'
 theExtras[84] = ''
 theExtras[85] = ''
 theExtras[86] = ''
@@ -302,7 +302,7 @@ theExtras[88] = ''
 theExtras[89] = ''
 theExtras[90] = '&start=105&end=124'
 theExtras[91] = ''
-theExtras[92] = '&start=114.3&end=127.9'
+theExtras[92] = '&start=115&end=128'
 theExtras[93] = ''
 theExtras[94] = ''
 theExtras[95] = '&end=9'
@@ -461,9 +461,9 @@ function wipeImage() {
 function showImage() {
 
     if (theType[whichImage] == 'RenderLink()') {
-        document.getElementById("randomimage").innerHTML = '<a href="' + theEmbedCode[whichImage] + '"> <img src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/Avvys/' + theImages[whichImage] + '.png" class=avvy> </a>';
+        document.getElementById("randomimage").innerHTML = '<a href="' + theEmbedCode[whichImage] + '"> <img src="https://rainbowdashalwaysdressesinstyle.com/Tumblr/Avvys/' + theImages[whichImage] + '.png" class=avvy> </a>';
     } else {
-        document.getElementById("randomimage").innerHTML = '<img src="http://rainbowdashalwaysdressesinstyle.com/Tumblr/Avvys/' + theImages[whichImage] + '.png" class="avvy" onclick="ShowStuff();pauseParallax();' + theType[whichImage] + '">';
+        document.getElementById("randomimage").innerHTML = '<img src="https://rainbowdashalwaysdressesinstyle.com/Tumblr/Avvys/' + theImages[whichImage] + '.png" class="avvy" onclick="ShowStuff();pauseParallax();' + theType[whichImage] + '">';
     }
 }
 
@@ -472,34 +472,36 @@ function RenderImage() {
 }
 
 
-function RenderVideo() {
-    document.getElementById("toggle").innerHTML = '<object style="height: 100%;" width="720" height="405"><param name="movie" value="https://www.youtube.com/v/' + theEmbedCode[whichImage] + '?autoplay=1&controls=0&disablekb=1&modestbranding=1&enablejsapi=1&rel=0&showinfo=0&autohide=1&version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed id="ytplayer" src="https://www.youtube.com/v/' + theEmbedCode[whichImage] + '?autoplay=1&playerapiid=ytplayer&controls=0&enablejsapi=1&disablekb=1&iv_load_policy=3&modestbranding=1&rel=0' + theExtras[whichImage] + '&showinfo=0&autohide=1&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="720" height="405" wmode="transparent"></embed></object>';
-}
+var player;
+function RenderVideo() {document.getElementById('toggle').innerHTML = '<iframe id="player" width="720" height="405" frameborder="0" allowfullscreen="1" src="https://www.youtube.com/embed/' + theEmbedCode[whichImage] + '?enablejsapi=1&autoplay=1&modestbranding=1&controls=0&modestbranding=0&autohide=1&disablekb=1&rel=0&showinfo=0&iv_load_policy=3' + theExtras[whichImage] + '"></iframe>'
 
-function RenderSoundcloud() {
-    document.getElementById("toggle").innerHTML = '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + theEmbedCode[whichImage] + '&amp;color=00aabb&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>'
-}
+    player = new YT.Player('player', {
+        events: { 'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange }
+    });
+};
 
-function DerenderVideo() {
-    document.getElementById("toggle").innerHTML = "IGNOREME"
-}
+function onPlayerReady(event) {
+    event.target.setVolume(100);
+    event.target.setPlaybackQuality("hd720");
+};
 
-//The Youtube Integration Stuff - For all Videos, when it ends, close the Divs.
-function onYouTubePlayerReady(ytplayer) {
-    ytplayer = document.getElementById("ytplayer");
-    ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
-    ytplayer.setPlaybackQuality("hd720");
-}
-
-function onytplayerStateChange(newState) {
-    if (newState == 0) {
+function onPlayerStateChange(newState) {
+    if (player.getPlayerState() == 0) {
         HideStuff();
         DerenderVideo();
         startParallax();
         RandomNumber();
         wipeImage();
         showImage();
-    }
+    };
+};
+
+function DerenderVideo() {
+        player.destroy();
+};
+
+function RenderSoundcloud() {
+    document.getElementById("toggle").innerHTML = '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + theEmbedCode[whichImage] + '&amp;color=00aabb&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>'
 }
 
 // sandstorm stuff
